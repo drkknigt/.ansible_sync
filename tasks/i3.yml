@@ -1,0 +1,21 @@
+---
+- name: install i3 
+  apt:
+    name: apt
+    update_cache: True
+
+- name: install keys
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: EFC31B0AE9F1000B38E37FC8C0930F305A0E0FEF
+
+- name: install i3gaps repo
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/regolith-linux/stable/ubuntu groovy main 
+     state: present
+     update_cache: True
+
+- name: install i3gaps
+  apt:
+    name: i3-gaps
+

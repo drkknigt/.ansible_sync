@@ -1,0 +1,13 @@
+---
+- name: install vim and dependencies
+  become: True
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/jonathonf/vim/ubuntu focal main
+     state: present
+     update_cache: True
+
+- name: install vim and xclip
+  become: True
+  apt:
+    name: ["vim-nox","vim-gtk3","xclip"]
+    update_cache: yes

@@ -1,0 +1,11 @@
+---
+- name: install lua dependencies
+  become: yes
+  apt:
+    name: ["libreadline-dev","unzip","lua5.3","liblua5.3-dev","luarocks"]
+    update_cache: True
+
+- name: install luacheck
+  become: yes
+  shell: luarocks install luacheck
+

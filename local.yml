@@ -1,0 +1,124 @@
+--- 
+- name: install system
+  hosts: localhost
+  become: true
+  pre_tasks:
+    - name: update and upgrade the system
+      apt:
+         update_cache: yes
+         upgrade: dist
+  tasks:
+    - name: sync dotfiles
+      include_tasks:
+        file: tasks/dotfiles.yml
+        apply:
+          tags: dot
+      tags: dot
+
+    - name: install git
+      include_tasks: 
+         file: tasks/git.yml
+         apply:
+           tags: git
+      tags: git
+
+    - name: install terminals
+      include_tasks: 
+         file: tasks/terminal.yml
+         apply:
+           tags: terminal
+      tags: terminal
+
+    - name: install vim
+      include_tasks: 
+         file: tasks/vim.yml
+         apply:
+           tags: vim
+      tags: vim
+
+    - name: install node and nvm
+      include_tasks:
+        file: tasks/node.yml
+        apply:
+          tags: node
+      tags: node
+
+    - name: install python
+      include_tasks:
+        file: tasks/python.yml
+        apply:
+          tags: python
+      tags: python
+
+    - name: install clangd and essentials
+      include_tasks:
+        file: tasks/clangd.yml
+        apply:
+          tags: clangd
+      tags: clangd
+
+    - name: install tmux libraries
+      include_tasks:
+        file: tasks/tmux.yml
+        apply:
+          tags: tmux
+      tags: tmux
+
+    - name: install fzf
+      include_tasks:
+        file: tasks/fzf.yml
+        apply:
+          tags: fzf
+      tags: fzf
+
+    - name: install misc soft
+      include_tasks:
+        file: tasks/misc.yml
+        apply:
+          tags: misc
+      tags: misc
+
+    - name: install lua and luarocks
+      include_tasks: 
+         file: tasks/lua.yml
+         apply:
+           tags: lua
+      tags: lua
+
+    - name: install i3
+      include_tasks:
+        file: tasks/i3.yml
+        apply:
+          tags: i3
+      tags: i3
+
+    - name: install polybar
+      include_tasks:
+        file: tasks/polybar.yml
+        apply:
+          tags: polybar
+      tags: polybar
+
+    - name: cpu auto freq
+      include_tasks:
+        file: tasks/auto.yml
+        apply:
+          tags: auto
+      tags: auto
+
+    - name: brave browser and zettler
+      include_tasks:
+        file: tasks/brave.yml
+        apply:
+          tags: brave
+      tags: brave
+
+    - name: zsh shell
+      include_tasks:
+        file: tasks/zsh.yml
+        apply:
+          tags: zsh
+      tags: zsh
+
+
+

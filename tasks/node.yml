@@ -1,0 +1,11 @@
+--- 
+- name: install n
+  become: yes
+  shell: curl -fsSL https://deb.nodesource.com/setup_lts.x | bash 
+
+- name: install node lts
+  become: yes
+  apt:
+    name: nodejs
+    update_cache: yes
+

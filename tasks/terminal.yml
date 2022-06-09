@@ -1,0 +1,32 @@
+---
+- name: install ppa for alacritty
+  become: True
+  apt_repository:
+    repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu focal main
+    state: present
+    
+
+- name: install alacritty
+  become: True
+  apt:
+     name: alacritty
+     update_cache: yes
+  
+
+- name: make bin
+  shell: mkdir $HOME/.local/bin
+  become: yes
+  become_user: drkknght
+  
+
+- name: install kity
+  shell: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+  become: yes
+  become_user: drkknght
+  
+
+- name: symbolic link to kity executable
+  shell: ln -s /home/drkknght/.local/kitty.app/bin/kitty /home/drkknght/.local/bin
+  become: yes
+  become_user: drkknght
+  

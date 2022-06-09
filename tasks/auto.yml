@@ -1,0 +1,13 @@
+---
+- name: clone autofreq
+  git:
+    repo: https://github.com/AdnanHodzic/auto-cpufreq.git
+    dest: /home/drkknght/auto-cpufreq
+
+- name: build autofreq
+  become: yes
+  shell: |
+    cd /home/drkknght/auto-cpufreq
+    echo i | ./auto-cpufreq-installer
+    auto-cpufreq --install
+

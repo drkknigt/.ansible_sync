@@ -1,0 +1,32 @@
+---
+- name: install stow
+  apt:
+    name: stow
+    update_cache: yes
+
+- name: clone dotfiles
+  git:
+    repo: https://github.com/drkknigt/.dotfiles.git
+    dest: $HOME/.dotfiles
+  become: yes
+  become_user: drkknght
+
+- name: stow dotfiles
+  become: yes
+  shell: |
+    cd ~/.dotfiles && stow */
+  become_user: drkknght
+
+- name: clone wallpapers
+  git:
+    repo: https://github.com/drkknigt/wall.git
+    dest: $HOME/wall
+  become: yes
+  become_user: drkknght
+
+
+- name: move wallpapers to pictures
+  shell: |
+    cp $HOME/wall/* $HOME/Pictures/ -r
+  become: yes
+  become_user: drkknght

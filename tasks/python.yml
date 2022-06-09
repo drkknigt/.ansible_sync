@@ -1,0 +1,11 @@
+---
+- name: install python3
+  become: yes
+  apt:
+    name: ["python3.9","python3-pip","python3.9-venv"]
+    update_cache: True
+
+- name: install python libraries
+  pip:
+    name: ["black","flake8","mypy","autopep8","pylint","playsound","pytube","pyowm","pyftpdlib"]
+

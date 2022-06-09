@@ -1,0 +1,31 @@
+---
+- name: required libraries for brave
+  become: true
+  apt:
+    name: ["curl", "apt-transport-https"]
+
+- name: Brave Browser archive-keyring.gpg download
+  uri: 
+    url: https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+    dest: /usr/share/keyrings/brave-browser-archive-keyring.gpg
+
+- name: Brave Browser PPA setting
+  become: true
+  shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
+
+- name: Brave Browser apt installation
+  become: true
+  apt:
+    update_cache: yes
+    name: brave-browser
+
+- name: zettler installation
+  get_url:
+    url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.6/Zettlr-2.2.6-amd64.deb
+    dest: /home/drkknght/
+  become: yes
+  become_user: drkknght
+
+- name: deb package
+  apt:
+    deb: /home/drkknght/Zettlr-2.2.6-amd64.deb

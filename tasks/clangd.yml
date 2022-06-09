@@ -1,0 +1,7 @@
+---
+- name: install clangd-12
+  become: yes
+  apt:
+    name: "clangd-12"
+    install_recommends: yes
+    update_cache: True
