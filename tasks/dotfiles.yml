@@ -16,7 +16,12 @@
     mv ~/.bashrc ~/.profile ~/Desktop
   become: yes
   become_user: drkknght
-
+  
+- name: remove stuff
+  shell: |
+     rm -rf /home/drkknght/tmux /home/drkknght/polybar /home/drkknght/picom
+  become: yes
+  
 - name: stow dotfiles
   become: yes
   shell: |
