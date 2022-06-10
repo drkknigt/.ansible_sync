@@ -8,13 +8,6 @@
          update_cache: yes
          upgrade: dist
   tasks:
-    - name: sync dotfiles
-      include_tasks:
-        file: tasks/dotfiles.yml
-        apply:
-          tags: dot
-      tags: dot
-
     - name: install git
       include_tasks: 
          file: tasks/git.yml
@@ -113,7 +106,14 @@
         apply:
           tags: zsh
       tags: zsh
-   
+      
+    - name: sync dotfiles
+      include_tasks:
+        file: tasks/dotfiles.yml
+        apply:
+          tags: dot
+      tags: dot
+      
     - name: cpu auto freq
       include_tasks:
         file: tasks/auto.yml
