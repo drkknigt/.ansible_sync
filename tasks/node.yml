@@ -9,39 +9,33 @@
 
 - name: npmjs prefix
   shell: mkdir -p ~/.local/.npm-global
-  tags:
-  - install
-  - node
+  become: yes
+  become_user: drkknght
+
 
 - name: add npmjs to path
   shell: PATH=~/.local/.npm-global/bin:$PATH
-  tags:
-  - install
-  - node
+  become: yes
+  become_user: drkknght
+
 
 - name: npmjs global settings
   shell: npm config set prefix '~/.local/.npm-global'
-  tags:
-  - install
-  - node
+  become: yes
+  become_user: drkknght
 
 - name: export path 
   shell: export PATH=~/.local/.npm-global/bin:$PATH
-  tags:
-  - install
-  - node
-  - npm-path
+  become: yes
+  become_user: drkknght
 
 - name: Install N
   npm:
     name: n
     global: yes
-  tags:
-    - install
-    - node
+
 
 - name: Install correct version of Node
   shell: n lts
-  tags:
-    - install
-    - node
+  become: yes
+  become_user: drkknght
