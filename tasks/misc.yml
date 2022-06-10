@@ -33,6 +33,11 @@
      repo: deb https://ppa.launchpadcontent.net/lazygit-team/release/ubuntu focal main 
      state: present
      update_cache: True
+
+- name: install lazygit
+  apt:
+    name: lazygit
+    update_cache: True
      
 - name: ripgrep installation
   get_url:
