@@ -1,8 +1,13 @@
 ---
-- name: install git
-  become: True
-  apt:
-    name: git
-    update_cache: yes
-  
+- name: Git personal setup email
+  git_config:
+    name: user.email
+    scope: global
+    value: "vitobnd79@gmail.com"
+
+- name: Git personal setup name
+  git_config:
+    name: user.name
+    scope: global
+    value: "drkknigt"
   
