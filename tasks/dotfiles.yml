@@ -39,6 +39,6 @@
   
 - name: change permission
   shell: |
-     chmod +x ~/bin
+     chmod +x ~/bin -R
   become: yes
   become_user: drkknght
