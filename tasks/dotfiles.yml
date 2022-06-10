@@ -14,7 +14,7 @@
   
 - name: remove stuff
   shell: |
-     rm -rf /home/drkknght/tmux /home/drkknght/polybar /home/drkknght/picom /home/drkknght/.bashrc /home/drkknght/.zshrc /home/drkknght/.tmux.conf
+     rm -rf /home/drkknght/tmux /home/drkknght/polybar /home/drkknght/picom /home/drkknght/.bashrc /home/drkknght/.zshrc /home/drkknght/.tmux.conf ~/home/drkknght/.profile
   become: yes
   
 - name: stow dotfiles
