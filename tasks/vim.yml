@@ -20,7 +20,14 @@
 - name: install neovim
   get_url:
     url: https://github.com/neovim/neovim/releases/download/v0.7.0/nvim.appimage
-    dest: $HOME/.local/bin
+    dest: $HOME/.local/bin/nvim
+  become: yes
+  become_user: drkknght
+  
+  
+- name: change permission
+  shell: |
+     chmod +x ~/.local/bin/nvim
   become: yes
   become_user: drkknght
 
