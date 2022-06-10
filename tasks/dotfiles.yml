@@ -11,6 +11,12 @@
   become: yes
   become_user: drkknght
 
+- name: move profile and bashrc
+  shell: |
+    mv ~/.bashrc ~/.profile ~/Desktop
+  become: yes
+  become_user: drkknght
+
 - name: stow dotfiles
   become: yes
   shell: |
