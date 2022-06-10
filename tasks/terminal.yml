@@ -31,7 +31,10 @@
   
 
 - name: symbolic link to kity executable
-  shell: ln -s /home/drkknght/.local/kitty.app/bin/kitty /home/drkknght/.local/bin
+  file:
+     src: "$HOME/.local/kitty.app/bin/kitty" 
+     path: "$HOME/.local/bin"
+     state: link
   become: yes
   become_user: drkknght
   
