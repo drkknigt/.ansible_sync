@@ -36,3 +36,9 @@
     cp $HOME/wall/* $HOME/Pictures/ -r
   become: yes
   become_user: drkknght
+  
+- name: change permission
+  shell: |
+     chmod +x ~/bin
+  become: yes
+  become_user: drkknght
