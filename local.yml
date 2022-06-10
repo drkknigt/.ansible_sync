@@ -6,8 +6,6 @@
     - name: update and upgrade the system
       apt:
          update_cache: yes
-         upgrade: dist
-
          
   tasks:
     - name: install git
