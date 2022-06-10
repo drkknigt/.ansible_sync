@@ -3,7 +3,7 @@
   apt: name=zsh
     
 - name: Change shell to zsh
-  shell: chsh -s $(which zsh)
+  shell: usermod --shell /bin/zsh drkknght
 
 - name: Check that the somefile.conf exists
   stat:
