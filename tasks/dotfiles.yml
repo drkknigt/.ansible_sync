@@ -2,7 +2,7 @@
 - name: install stow
   apt:
     name: stow
-    update_cache: yes
+    update_cache: no
 
 - name: clone dotfiles
   git:
