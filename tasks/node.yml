@@ -1,41 +1,9 @@
---- 
-- name: Install nodejs and npm
-  become: true
+---
+- name: install n
+  become: yes
+  shell: curl -fsSL https://deb.nodesource.com/setup_lts.x | bash 
+
+- name: install node lts
+  become: yes
   apt:
-    name: ["nodejs", "npm"]
-  tags:
-    - install
-    - node
-
-- name: npmjs prefix
-  shell: mkdir -p ~/.local/.npm-global
-  become: yes
-  become_user: drkknght
-
-
-- name: add npmjs to path
-  shell: PATH=~/.local/.npm-global/bin:$PATH
-  become: yes
-  become_user: drkknght
-
-
-- name: npmjs global settings
-  shell: npm config set prefix '~/.local/.npm-global'
-  become: yes
-  become_user: drkknght
-
-- name: export path 
-  shell: export PATH=~/.local/.npm-global/bin:$PATH
-  become: yes
-  become_user: drkknght
-
-- name: Install N
-  npm:
-    name: n
-    global: yes
-
-
-- name: Install correct version of Node
-  shell: n lts
-  become: yes
-  become_user: drkknght
+    name: nodejs
