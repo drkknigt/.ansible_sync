@@ -1,4 +1,9 @@
 ---
+- name: install keys
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 3A160895CC2CE253085D08A552B24DF7D43B5377
+    
 - name: install ppa for alacritty
   become: True
   apt_repository:
