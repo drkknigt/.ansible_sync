@@ -1,7 +1,7 @@
 ---
 - name: install misc software
   apt:
-    name: ["ranger","htop","zathura","vlc","rofi","nitrogen","fd-find","ripgrep","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
+    name: ["ranger","htop","zathura","vlc","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
     update_cache: yes
  
 - name: install picom
@@ -33,3 +33,15 @@
      repo: deb https://ppa.launchpadcontent.net/lazygit-team/release/ubuntu focal main 
      state: present
      update_cache: True
+     
+- name: ripgrep installation
+  get_url:
+    url: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
+    dest: /home/drkknght/
+  become: yes
+  become_user: drkknght
+  
+- name: deb package
+  become: yes
+  apt:
+    deb: /home/drkknght/ripgrep_13.0.0_amd64.deb
