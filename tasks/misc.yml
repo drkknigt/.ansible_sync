@@ -1,7 +1,7 @@
 ---
 - name: install misc software
   apt:
-    name: ["ranger","htop","zathura","vlc","rofi","nitrogen","fd-find","ripgrep","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lazygit","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
+    name: ["ranger","htop","zathura","vlc","rofi","nitrogen","fd-find","ripgrep","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
     update_cache: yes
  
 - name: install picom
@@ -22,4 +22,14 @@
     meson --buildtype=release . build
     ninja -C build
     ninja -C build install
-
+    
+- name: install keys
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 41468D9A516AB58268042C6768CCF87596E97291
+    
+- name: install lazygit repo
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/lazygit-team/release/ubuntu focal main 
+     state: present
+     update_cache: True
