@@ -99,12 +99,6 @@
           tags: polybar
       tags: polybar
 
-    - name: cpu auto freq
-      include_tasks:
-        file: tasks/auto.yml
-        apply:
-          tags: auto
-      tags: auto
 
     - name: brave browser and zettler
       include_tasks:
@@ -119,6 +113,14 @@
         apply:
           tags: zsh
       tags: zsh
+   
+    - name: cpu auto freq
+      include_tasks:
+        file: tasks/auto.yml
+        apply:
+          tags: auto
+      tags: auto   
+      
 
 
 
