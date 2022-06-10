@@ -35,7 +35,7 @@
 - name: symbolic link to kity executable
   file:
      src: "$HOME/.local/kitty.app/bin/kitty" 
-     path: "$HOME/.local/bin"
+     dest: "$HOME/.local/bin"
      state: link
   become: yes
   become_user: drkknght
