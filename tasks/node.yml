@@ -25,7 +25,7 @@
   - install
   - node
 
-- name: npmjs global settings export path in case I don't have dotfiles installed
+- name: export path 
   shell: export PATH=~/.local/.npm-global/bin:$PATH
   tags:
   - install
