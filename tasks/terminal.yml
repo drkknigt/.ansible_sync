@@ -25,7 +25,20 @@
   become: yes
   become_user: drkknght
 
- 
+- name: make undodir for nvim
+  file:
+    path: $HOME/textedit/nvim
+    state: directory
+  become: yes
+  become_user: drkknght
+  
+- name: make undodir for vim
+  file:
+    path: $HOME/textedit/vim
+    state: directory
+  become: yes
+  become_user: drkknght
+  
 - name: install kity
   shell: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   become: yes
