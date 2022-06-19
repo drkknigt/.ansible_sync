@@ -9,3 +9,19 @@
   become: yes
   shell: luarocks install luacheck
 
+- name: clone stylua
+  unarchive:
+    src: https://github.com/JohnnyMorganz/StyLua/releases/download/v0.13.1/stylua-linux.zip
+    dest: $HOME/.local/bin/
+    remote_src: yes
+  become: yes
+  become_user: drkknght
+
+- name: change permission
+  file:
+    path: $HOME/.local/bin/stylua
+    owner: drkknght
+    group: drkknght
+    mode: '0755'
+  become: yes
+  become_user: drkknght
