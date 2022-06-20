@@ -19,11 +19,12 @@
 - name: zettler installation
   get_url:
     url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.6/Zettlr-2.2.6-amd64.deb
-    dest: /home/drkknght/
+    dest: $HOME
   become: yes
   become_user: drkknght
 
 - name: deb package
   become: yes
   apt:
-    deb: /home/drkknght/Zettlr-2.2.6-amd64.deb
+    deb: $HOME/Zettlr-2.2.6-amd64.deb
+  become_user: drkknght

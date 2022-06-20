@@ -7,7 +7,7 @@
 
 - name: install python libraries
   pip:
-    name: ["black","flake8","mypy","autopep8","pylint","playsound","pytube","pyowm","pyftpdlib"]
+    name: ["black","flake8","mypy","autopep8","pylint","playsound","pytube","pyowm","pyftpdlib","pytest"]
   become: yes
   become_user: drkknght
 
