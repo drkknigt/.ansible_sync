@@ -17,17 +17,34 @@
     name: ["vim-nox","vim-gtk3","xclip"]
     update_cache: yes
 
+- name: clone neovim
+  git:
+    repo: https://github.com/neovim/neovim
+    dest: $HOME/neovim
+  become: yes
+  become_user: drkknght
+
+- name: build neovim release from source
+  shell: |
+    cd $HOME/neovim && make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=$HOME/.local/ install
+  become: yes
+  become_user: drkknght
+
+
 - name: install neovim
   get_url:
     url: https://github.com/neovim/neovim/releases/download/v0.7.0/nvim.appimage
-    dest: $HOME/.local/bin/nvim
+    dest: $HOME/.local/bin/nvim_0.7
   become: yes
   become_user: drkknght
   
   
 - name: change permission
-  shell: |
-     chmod +x ~/.local/bin/nvim
+  file:
+    path: $HOME/.local/bin/nvim_0.7
+    owner: drkknght
+    group: drkknght
+    mode: '0755'
   become: yes
   become_user: drkknght
 
