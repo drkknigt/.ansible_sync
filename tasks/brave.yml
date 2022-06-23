@@ -27,4 +27,3 @@
   apt:
     deb: /home/drkknght/Zettlr-2.2.6-amd64.deb
   become: yes
-  become_user: drkknght
