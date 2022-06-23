@@ -24,7 +24,7 @@
   become_user: drkknght
 
 - name: deb package
-  become: yes
   apt:
     deb: $HOME/Zettlr-2.2.6-amd64.deb
+  become: yes
   become_user: drkknght
