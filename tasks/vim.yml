@@ -14,7 +14,8 @@
 - name: install vim and xclip
   become: True
   apt:
-    name: ["vim-nox","vim-gtk3","xclip"]
+    name: ["vim-nox","vim-gtk3","xclip",'ninja-build', 'gettext', 'libtool' ,'libtool-bin', 'autoconf', 'automake', 'cmake', 'g++' ,'pkg-config' ,'unzip','curl', 'doxygen'
+]
     update_cache: yes
 
 - name: clone neovim
