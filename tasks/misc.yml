@@ -1,7 +1,7 @@
 ---
 - name: install misc software
   apt:
-    name: ["ranger","tldr","htop","zathura","vlc","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
+    name: ["ranger","tldr","htop","zathura","vlc","cmake","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","hddtemp","psensor","qbittorrent","telegram-desktop"]
     update_cache: yes
  
 - name: install picom
