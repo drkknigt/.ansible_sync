@@ -11,3 +11,9 @@
   become: yes
   become_user: drkknght
 
+- name: install poetry 
+  shell: |
+    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+  become: yes
+  become_user: drkknght
+
