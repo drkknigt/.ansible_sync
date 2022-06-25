@@ -2,7 +2,7 @@
 - name: install python3
   become: yes
   apt:
-    name: ["python3.9","python3-pip","python3.9-venv","make","build-essential","libssl-dev","zlib1g-dev","nlibbz2-dev","libreadline-dev","libsqlite3-dev","wget","curl","llvm","libncurses5-dev","nlibncursesw5","xz-utils","tk-dev","libffi-dev","liblzma-dev","python-openssl","git"]
+    name: ["python3.9","python3-pip","python3.9-venv","make","build-essential","libssl-dev","zlib1g-dev","libbz2-dev","libreadline-dev","libsqlite3-dev","wget","curl","llvm","libncurses5-dev","libncursesw5","xz-utils","tk-dev","libffi-dev","liblzma-dev","python-openssl","git"]
     update_cache: True
 
 - name: install python libraries
