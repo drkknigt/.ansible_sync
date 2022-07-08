@@ -15,12 +15,19 @@
            tags: git
       tags: git
 
-    - name: install terminals
+    - name: install alacritty
       include_tasks: 
-         file: tasks/terminal.yml
+         file: tasks/alacritty.yml
          apply:
-           tags: terminal
-      tags: terminal
+           tags: alacritty
+      tags: alacritty
+
+    - name: install kitty
+      include_tasks: 
+         file: tasks/kitty.yml
+         apply:
+           tags: kitty
+      tags: kitty
 
     - name: install vim
       include_tasks: 
@@ -28,6 +35,13 @@
          apply:
            tags: vim
       tags: vim
+
+    - name: install neovim
+      include_tasks: 
+         file: tasks/neovim.yml
+         apply:
+           tags: neovim
+      tags: neovim
 
     - name: install node and nvm
       include_tasks:
