@@ -85,6 +85,13 @@
           tags: misc
       tags: misc
 
+    - name: install picom
+      include_tasks:
+        file: tasks/picom.yml
+        apply:
+          tags: picom
+      tags: picom
+
     - name: install lua and luarocks
       include_tasks: 
          file: tasks/lua.yml
