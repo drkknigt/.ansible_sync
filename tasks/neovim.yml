@@ -12,9 +12,8 @@
 
 - name: build neovim release from source
   shell: |
-    cd $HOME/neovim && make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=$HOME/.local/ install
+    cd /home/drkknght/neovim && make CMAKE_BUILD_TYPE=Release CMAKE_INSTALL_PREFIX=/usr/local install
   become: yes
-  become_user: drkknght
 
 - name: make undodir for nvim
   file:
