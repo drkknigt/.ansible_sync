@@ -134,7 +134,14 @@
         apply:
           tags: dot
       tags: dot
-      
+
+    - name: install fonts
+      include_tasks:
+        file: tasks/fonts.yml
+        apply:
+          tags: fonts
+      tags: fonts
+
     - name: cpu auto freq
       include_tasks:
         file: tasks/auto.yml
