@@ -135,6 +135,13 @@
           tags: dot
       tags: dot
 
+    - name: Install Docker
+      include_tasks:
+        file: tasks/docker.yml
+        apply:
+          tags: docker
+      tags: docker
+
     - name: install fonts
       include_tasks:
         file: tasks/fonts.yml
