@@ -30,6 +30,7 @@
     state: present
 
 - name: Add to docker
+  become: yes
   user:
     name: drkknght
     groups: docker
