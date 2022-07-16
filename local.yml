@@ -1,11 +1,12 @@
 --- 
 - name: install system
   hosts: localhost
-  become: true
   pre_tasks:
     - name: update and upgrade the system
+      become: true
       apt:
          update_cache: yes
+         state: present
          
   tasks:
     - name: install git

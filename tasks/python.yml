@@ -8,14 +8,10 @@
 - name: install python libraries
   pip:
     name: ["black","flake8","mypy","autopep8","pylint","playsound","pytube","pyowm","pyftpdlib","pytest"]
-  become: yes
-  become_user: drkknght
 
 - name: install poetry 
   shell: |
     curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
-  become: yes
-  become_user: drkknght
 
 - name: install pyenv 
   shell: |
@@ -23,7 +19,5 @@
     echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
     echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
     echo 'eval "$(pyenv init -)"' >> ~/.bashrc
-  become: yes
-  become_user: drkknght
   
   

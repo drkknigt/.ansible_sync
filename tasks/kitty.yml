@@ -9,6 +9,4 @@
      src: "$HOME/.local/kitty.app/bin/kitty" 
      dest: "$HOME/.local/bin/kitty"
      state: link
-  become: yes
-  become_user: drkknght
   

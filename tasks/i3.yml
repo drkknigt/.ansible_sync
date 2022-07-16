@@ -3,6 +3,7 @@
   apt:
     name: apt
     update_cache: True
+  become: yes
 
 - name: install keys
   apt_key:
@@ -14,8 +15,10 @@
      repo: deb https://ppa.launchpadcontent.net/regolith-linux/stable/ubuntu groovy main 
      state: present
      update_cache: True
+  become: yes   
 
 - name: install i3gaps
   apt:
     name: i3-gaps
+  become: yes
 

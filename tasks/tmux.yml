@@ -9,8 +9,6 @@
   git:
     repo: https://github.com/tmux/tmux.git
     dest: $HOME/tmux
-  become: yes
-  become_user: drkknght
 
 - name: build tmux
   become: True

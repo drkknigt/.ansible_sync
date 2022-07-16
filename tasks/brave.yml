@@ -5,6 +5,7 @@
     name: ["curl", "apt-transport-https"]
 
 - name: Brave Browser archive-keyring.gpg download
+  become: yes
   shell: |
      curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
      echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list
@@ -16,14 +17,7 @@
     update_cache: yes
       
 
-- name: zettler installation
-  get_url:
-    url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.6/Zettlr-2.2.6-amd64.deb
-    dest: $HOME
-  become: yes
-  become_user: drkknght
-
 - name: deb package
   apt:
-    deb: /home/drkknght/Zettlr-2.2.6-amd64.deb
+    deb: https://github.com/Zettlr/Zettlr/releases/download/v2.2.6/Zettlr-2.2.6-amd64.deb
   become: yes

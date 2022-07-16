@@ -7,7 +7,7 @@
 - name: clone git polybar
   git:
     repo: https://github.com/polybar/polybar
-    dest: /home/drkknght/polybar
+    dest: $HOME/polybar
     recursive: True
 
 - name: build polybar

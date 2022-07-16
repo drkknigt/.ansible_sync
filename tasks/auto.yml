@@ -2,7 +2,7 @@
 - name: clone autofreq
   git:
     repo: https://github.com/AdnanHodzic/auto-cpufreq.git
-    dest: /home/drkknght/auto-cpufreq
+    dest: $HOME/auto-cpufreq
 
 - name: build autofreq
   become: yes

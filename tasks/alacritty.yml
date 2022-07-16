@@ -22,8 +22,6 @@
   file:
     path: $HOME/.local/bin
     state: directory
-  become: yes
-  become_user: drkknght
 
 
   
