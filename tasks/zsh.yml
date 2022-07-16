@@ -5,6 +5,7 @@
     
 - name: Change shell to zsh
   shell: usermod --shell /bin/zsh drkknght
+  become: yes
 
 - name: Check that the somefile.conf exists
   stat:
