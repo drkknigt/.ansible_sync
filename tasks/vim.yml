@@ -3,6 +3,7 @@
   apt_key:
     keyserver: keyserver.ubuntu.com
     id: 4AB0F789CBA31744CC7DA76A8CF63AD3F06FC659
+  become: yes
     
 - name: install vim and dependencies
   become: True

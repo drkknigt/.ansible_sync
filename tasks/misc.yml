@@ -9,6 +9,7 @@
   apt_key:
     keyserver: keyserver.ubuntu.com
     id: 41468D9A516AB58268042C6768CCF87596E97291
+  become: yes
     
 - name: install lazygit repo
   apt_repository:

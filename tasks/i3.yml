@@ -9,6 +9,7 @@
   apt_key:
     keyserver: keyserver.ubuntu.com
     id: EFC31B0AE9F1000B38E37FC8C0930F305A0E0FEF
+  become: yes
 
 - name: install i3gaps repo
   apt_repository:

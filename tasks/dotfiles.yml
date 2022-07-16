@@ -17,10 +17,8 @@
   become: yes
   
 - name: stow dotfiles
-  become: yes
   shell: |
     cd ~/.dotfiles && stow */
-  become_user: drkknght
 
 - name: clone wallpapers
   git:
