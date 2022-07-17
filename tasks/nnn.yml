@@ -1,0 +1,15 @@
+- name: clone nnn
+  git:
+    repo: https://github.com/jarun/nnn
+    dest: $HOME/nnn
+    depth: 1
+
+- name: build nnn
+  make:
+    chdir: /home/drkknght/nnn
+    target: install
+    params:
+      O_NERD: 1
+      O_PCRE: 1
+      PREFIX: /home/drkknght/.local
+  become: yes

@@ -143,6 +143,13 @@
           tags: docker
       tags: docker
 
+    - name: install nnn
+      include_tasks:
+        file: tasks/nnn.yml
+        apply:
+          tags: nnn
+      tags: nnn
+      
     - name: install fonts
       include_tasks:
         file: tasks/fonts.yml
