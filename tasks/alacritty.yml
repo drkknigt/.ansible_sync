@@ -8,7 +8,7 @@
 - name: install ppa for alacritty
   become: True
   apt_repository:
-    repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu focal main
+    repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu jammy main
     state: present
     
 

@@ -8,7 +8,7 @@
 - name: install vim and dependencies
   become: True
   apt_repository:
-     repo: deb https://ppa.launchpadcontent.net/jonathonf/vim/ubuntu focal main
+     repo: deb https://ppa.launchpadcontent.net/jonathonf/vim/ubuntu jammy main
      state: present
      update_cache: True
 

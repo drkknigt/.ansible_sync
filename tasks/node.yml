@@ -1,9 +1,13 @@
 ---
 - name: install n
+  get_url:
+    url: https://raw.githubusercontent.com/tj/n/master/bin/n
+    dest: ~/.local/bin/n
+    mode: '0764'
   become: yes
-  shell: curl -fsSL https://deb.nodesource.com/setup_lts.x | bash 
+  become_user: drkknght
 
 - name: install node lts
   become: yes
-  apt:
-    name: nodejs
+  shell: |
+    /home/drkknght/.local/bin/n lts
