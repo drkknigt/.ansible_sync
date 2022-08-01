@@ -1,13 +1,17 @@
 ---
-- name: install n
-  get_url:
-    url: https://raw.githubusercontent.com/tj/n/master/bin/n
-    dest: ~/.local/bin/n
-    mode: '0764'
-  become: yes
-  become_user: drkknght
-
 - name: install node lts
   become: yes
+  apt:
+     name: ["nodejs","npm"]
+     update_cache: yes
+     
+- name: install n
+  become: yes
+  community.general.npm:
+      name: n
+      global: yes
+
+- name: install latest lts
+  become: yes
   shell: |
-    /home/drkknght/.local/bin/n lts
+     n lts
