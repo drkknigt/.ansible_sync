@@ -13,9 +13,8 @@
   register: oh_my_stats
 
 - name: Oh-My-Zsh
-  # shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.oh-my-installer && chmod +x ~/.oh-my-installer && ~/.oh-my-installer
   shell: |
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/master/tools/install.sh)"
+    curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh > ~/.oh-my-installer && chmod +x ~/.oh-my-installer && ~/.oh-my-installer
   when: oh_my_stats.stat.exists == False
   
 - name: Install powerlevel10k theme
