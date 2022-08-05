@@ -30,3 +30,21 @@
   apt:
     deb: https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep_13.0.0_amd64.deb
     
+- name: install keys
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: F2C37BD8BDF01321549242C9AEC82AC78B65E182
+  become: yes
+    
+- name: install lazygit repo
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/spvkgn/zathura-mupdf/ubuntu focal main
+     state: present
+     update_cache: True
+  become: yes
+
+- name: install zathura
+  apt:
+    name: ["zathura","zathura-djvu","zathura-pdf-mupdf"]
+    update_cache: true
+  become: yes
