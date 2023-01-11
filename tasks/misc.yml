@@ -1,7 +1,7 @@
 ---
 - name: install misc software
   apt:
-    name: ["ranger","tldr","htop","vlc","cmake","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","psensor","qbittorrent","telegram-desktop","nmap","openssh-server","qalc","smartmontools","gsmartcontrol",,"gimp","ffmpeg","mediainfo","testdisk","cpufrequtils","batstat","cpupower","cpupower-gui","grub-customizer","xcvt","acpitool"]
+    name: ["ranger","tldr","htop","vlc","cmake","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","psensor","qbittorrent","telegram-desktop","nmap","openssh-server","qalc","smartmontools","gsmartcontrol",,"gimp","ffmpeg","mediainfo","testdisk","cpufrequtils","batstat","cpupower","cpupower-gui","grub-customizer","xcvt","acpitool","checkinstall"]
     update_cache: yes
   become: yes
     
