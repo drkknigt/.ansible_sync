@@ -23,3 +23,16 @@
     name: i3-gaps
   become: yes
 
+- name: install autotiling
+  git:
+    repo: https://www.github.com/nwg-piotr/autotiling
+    dest: $HOME/autotiling
+
+- name: move make.py to bin
+  copy:
+    src: ~/autotiling/autotiling/main.py
+    dest: $HOME/.local/bin/autotiling
+    mode: 0750
+  
+  
+

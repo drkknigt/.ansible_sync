@@ -99,6 +99,13 @@
          apply:
            tags: lua
       tags: lua
+        
+    - name: install rust and cargo
+      include_tasks:
+        file: tasks/rust.yml
+        apply:
+          tags: rust
+      tags: rust
 
     - name: install i3
       include_tasks:

@@ -11,7 +11,7 @@
     scope: global
     value: "drkknigt"
   
-- name: Git personal setup email
+- name: name the master branch to main
   git_config:
     name: init.defaultBranch
     scope: global
