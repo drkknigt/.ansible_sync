@@ -3,12 +3,14 @@
   apt_key:
     keyserver: keyserver.ubuntu.com
     id: 3A160895CC2CE253085D08A552B24DF7D43B5377
+  ignore_errors: yes
     
 - name: install ppa for alacritty
   become: True
   apt_repository:
     repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu focal main
     state: present
+  ignore_errors: yes
     
 
 - name: install alacritty
@@ -16,6 +18,7 @@
   apt:
      name: alacritty
      update_cache: yes
+  ignore_errors: yes
   
 
 - name: make bin
