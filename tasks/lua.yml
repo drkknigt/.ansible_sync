@@ -4,6 +4,7 @@
   apt:
     name: ["libreadline-dev","unzip","lua5.3","liblua5.3-dev","luarocks"]
     update_cache: True
+  ignore_errors: yes
 
 - name: install luacheck
   become: yes
