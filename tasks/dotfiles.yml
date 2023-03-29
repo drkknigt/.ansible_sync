@@ -4,6 +4,7 @@
     name: stow
     update_cache: no
   become: yes
+  ignore_errors: yes
 
 - name: clone dotfiles
   git:
