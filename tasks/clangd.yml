@@ -5,3 +5,4 @@
     name: ["clangd-14","clang-14","clang-format-14","clang-tools-14"]
     install_recommends: yes
     update_cache: True
+  ignore_errors: yes
