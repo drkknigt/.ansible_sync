@@ -3,6 +3,7 @@
     name: ['ninja-build', 'gettext', 'libtool' ,'libtool-bin', 'autoconf', 'automake', 'cmake', 'g++' ,'pkg-config' ,'unzip','curl', 'doxygen']
     update_cache: yes
   become: yes
+  ignore_errors: yes
 
 - name: clone neovim
   git:
