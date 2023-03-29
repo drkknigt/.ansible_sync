@@ -4,6 +4,7 @@
     keyserver: keyserver.ubuntu.com
     id: A7654D8BAB1824F4D8F4E9D19352A0B69B72E6DF 
   become: yes
+  ignore_errors: yes
     
 - name: install kernel
   apt_repository:
@@ -11,9 +12,11 @@
      state: present
      update_cache: True
   become: yes
+  ignore_errors: yes
 
 - name: install kernel
   apt:
     name: ["linux-image-liquorix-amd64", "linux-headers-liquorix-amd64"]
     update_cache: true
   become: true
+  ignore_errors: yes
