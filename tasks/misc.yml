@@ -4,12 +4,14 @@
     name: ["ranger","tldr","htop","vlc","cmake","rofi","nitrogen","fd-find","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","conky","feh","virt-manager","lm-sensors","psensor","qbittorrent","telegram-desktop","nmap","openssh-server","qalc","smartmontools","gsmartcontrol","gimp","ffmpeg","mediainfo","testdisk","cpufrequtils","cpupower-gui","xcvt","acpitool","checkinstall","proxychains","tor"]
     update_cache: yes
   become: yes
+  ignore_errors: yes
     
 - name: install keys
   apt_key:
     keyserver: keyserver.ubuntu.com
     id: 41468D9A516AB58268042C6768CCF87596E97291
   become: yes
+  ignore_errors: yes
     
 - name: install lazygit repo
   apt_repository:
@@ -17,12 +19,14 @@
      state: present
      update_cache: True
   become: yes
+  ignore_errors: yes
 
 - name: install lazygit
   apt:
     name: lazygit
     update_cache: True
   become: yes
+  ignore_errors: yes
      
   
 - name: deb package
@@ -35,16 +39,19 @@
     keyserver: keyserver.ubuntu.com
     id: F2C37BD8BDF01321549242C9AEC82AC78B65E182
   become: yes
+  ignore_errors: yes
     
-- name: install lazygit repo
+- name: install zathura repo
   apt_repository:
      repo: deb https://ppa.launchpadcontent.net/spvkgn/zathura-mupdf/ubuntu focal main
      state: present
      update_cache: True
   become: yes
+  ignore_errors: yes
 
 - name: install zathura
   apt:
     name: ["zathura","zathura-djvu","zathura-pdf-mupdf"]
     update_cache: true
   become: yes
+  ignore_errors: yes
