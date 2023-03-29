@@ -4,6 +4,7 @@
   apt:
     name: ["libevent-dev" ,"ncurses-dev" ,"bison" ,"pkg-config" ,"automake" ,"autotools-dev"]
     update_cache: True
+  ignore_errors: yes
 
 - name: clone tmux
   git:
