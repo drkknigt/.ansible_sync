@@ -164,12 +164,12 @@
           tags: kernel
       tags: kernel
 
-    - name: cpu auto freq
-      include_tasks:
-        file: tasks/auto.yml
-        apply:
-          tags: auto
-      tags: auto   
+#   - name: cpu auto freq
+#     include_tasks:
+#       file: tasks/auto.yml
+#       apply:
+#         tags: auto
+#     tags: auto   
       
 
 
