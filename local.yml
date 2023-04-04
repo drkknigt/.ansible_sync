@@ -157,19 +157,19 @@
           tags: fonts
       tags: fonts
         
-#   - name: install liquorix kernel
-#     include_tasks:
-#       file: tasks/kernel.yml
-#       apply:
-#         tags: kernel
-#     tags: kernel
+    - name: install liquorix kernel
+      include_tasks:
+        file: tasks/kernel.yml
+        apply:
+          tags: kernel
+      tags: kernel
 
-#   - name: cpu auto freq
-#     include_tasks:
-#       file: tasks/auto.yml
-#       apply:
-#         tags: auto
-#     tags: auto   
+    - name: cpu auto freq
+      include_tasks:
+        file: tasks/auto.yml
+        apply:
+          tags: auto
+      tags: auto   
       
 
 
