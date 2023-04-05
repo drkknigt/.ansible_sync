@@ -35,3 +35,6 @@
   shell: |
      chmod +x ~/bin -R
      chmod +x ~/.fehbg
+     a=$(ls /sys/class/backlight/)
+     sed -Ei "s/card =.*/card = $a/g" /home/drkknght/.dotfiles/polybar/.config/polybar/config
+     
