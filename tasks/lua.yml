@@ -8,7 +8,9 @@
 
 - name: install luacheck
   become: yes
-  shell: luarocks install luacheck
+  shell: |
+    luarocks install luacheck 
+    luarocks install jsregexp
 
 - name: clone stylua
   unarchive:
