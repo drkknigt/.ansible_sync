@@ -21,10 +21,10 @@
   
 - name: make undodir for nvim
   file:
-    path: $HOME/textedit/nvim/undodir
+    path: $HOME/.textedit/nvim/undodir
     state: directory
 
 - name: make undodir for vim
   file:
-    path: $HOME/textedit/vim/undodir
+    path: $HOME/.textedit/vim/undodir
     state: directory
