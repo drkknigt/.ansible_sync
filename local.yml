@@ -158,12 +158,12 @@
           tags: fonts
       tags: fonts
         
-#   - name: install liquorix kernel
-#     include_tasks:
-#       file: tasks/kernel.yml
-#       apply:
-#         tags: kernel
-#     tags: kernel
+    - name: install xanmod kernel
+      include_tasks:
+        file: tasks/kernel.yml
+        apply:
+          tags: kernel
+      tags: kernel
 
 #   - name: cpu auto freq
 #     include_tasks:
@@ -173,5 +173,11 @@
 #     tags: auto   
       
 
+    - name: install wine and lutris for gaming
+      include_tasks:
+        file: tasks/game.yml
+        apply:
+          tags: game
+      tags: game
 
 

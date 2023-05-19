@@ -1,22 +1,16 @@
 ---
-- name: install keys
-  apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: A7654D8BAB1824F4D8F4E9D19352A0B69B72E6DF 
+- name: Register the pgp keys
+  shell: | 
+    wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -o /usr/share/keyrings/xanmod-archive-keyring.gpg
   become: yes
-  ignore_errors: yes
     
-- name: install kernel
-  apt_repository:
-     repo: deb https://ppa.launchpadcontent.net/damentz/liquorix/ubuntu jammy main 
-     state: present
-     update_cache: True
+- name: Add the repository
+  shell: |
+    echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
   become: yes
-  ignore_errors: yes
 
 - name: install kernel
   apt:
-    name: ["linux-image-liquorix-amd64", "linux-headers-liquorix-amd64"]
+    name: ["linux-xanmod-x64v3"]
     update_cache: true
   become: true
-  ignore_errors: yes
