@@ -181,3 +181,9 @@
       tags: game
 
 
+    - name: install go language
+      include_tasks:
+        file: tasks/go.yml
+        apply:
+          tags: go
+      tags: go
