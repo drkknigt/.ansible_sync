@@ -113,71 +113,73 @@
 --
 
 ### nvim-tree:
+```viml
+1. <leader>e  			   : open nvim file explorer
+2. g?      			       : show the mappings
+3. <C-]>   			       : change directory
+4. <C-e>   			       : OPen in place
+5. <C-k>   			       : info on the file
+6. <2-LeftMouse>           : Open                  
+7. <2-RightMouse>          : CD                    
+8. <C-]>                   : CD                    
+9. <C-E>                   : Open: In Place        
+10.  <C-K>                 : Info                  
+11.  <C-R>                 : Rename: Omit Filename 
+12.  <C-T>                 : Open: New Tab         
+13.  <C-V>                 : Open: Vertical Split  
+14.  <C-X>                 : Open: Horizontal Split
+15.  <BS>                  : Close Directory       
+16.  <CR>                  : Open                  
+17.  <Tab>                 : Open Preview          
+18.  -                     : Up                    
+19.  .                     : Run Command           
+20.  >                     : Next Sibling          
+21.  <                     : Previous Sibling      
+22.  B                     : Toggle No Buffer      
+23.  C                     : Toggle Git Clean      
+24.  D                     : Trash                 
+25.  E                     : Expand All            
+26.  F                     : Clean Filter          
+27.  H                     : Toggle Dotfiles       
+28.  I                     : Toggle Git Ignore     
+29.  J                     : Last Sibling          
+30.  K                     : First Sibling         
+31.  O                     : Open: No Window Picker
+32.  P                     : Parent Directory      
+33.  R                     : Refresh               
+34.  S                     : Search                
+35.  U                     : Toggle Hidden         
+36.  W                     : Collapse              
+37.  Y                     : Copy Relative Path    
+38.  a                     : Create                
+39.  bmv                   : Move Bookmarked       
+40.  c                     : Copy                  
+41.  ]c                    : Next Git              
+42.  [c                    : Prev Git              
+43.  d                     : Delete                
+44.  ]e                    : Next Diagnostic       
+45.  e                     : CD                    
+46.  [e                    : Prev Diagnostic       
+47.  f                     : Filter                
+48.  g?                    : Help                  
+49.  gy                    : Copy Absolute Path    
+50.  h                     : Close Directory       
+51.  l                     : Open                  
+52.  m                     : Toggle Bookmark       
+53.  o                     : Open                  
+54.  p                     : Paste                 
+55.  q                     : Close                 
+56.  r                     : Rename                
+57.  s                     : Run System            
+58.  u                     : Up                    
+59.  v                     : Open: Vertical Split  
+60.  x                     : Cut                   
+61.  y                     : Copy Name             
+62.  z                     : Open: Horizontal Split
 ```
-1. <leader>e  			-> open nvim file explorer
-2. g?      			    -> show the mappings
-3. <C-]>   			    -> change directory
-4. <C-e>   			    -> OPen in place
-5. <C-k>   			    -> info on the file
-6. <2-LeftMouse>         -> Open                  
-7. <2-RightMouse>        -> CD                    
-* <C-]>                 -> CD                    
-* <C-E>                 -> Open: In Place        
-* <C-K>                 -> Info                  
-* <C-R>                 -> Rename: Omit Filename 
-* <C-T>                 -> Open: New Tab         
-* <C-V>                 -> Open: Vertical Split  
-* <C-X>                 -> Open: Horizontal Split
-* <BS>                  -> Close Directory       
-* <CR>                  -> Open                  
-* <Tab>                 -> Open Preview          
-* -                     -> Up                    
-* .                     -> Run Command           
-* >                     -> Next Sibling          
-** <                   ->   Previous Sibling      
-* B                     -> Toggle No Buffer      
-* C                     -> Toggle Git Clean      
-* D                     -> Trash                 
-* E                     -> Expand All            
-* F                     -> Clean Filter          
-* H                     -> Toggle Dotfiles       
-* I                     -> Toggle Git Ignore     
-* J                     -> Last Sibling          
-* K                     -> First Sibling         
-* O                     -> Open: No Window Picker
-* P                     -> Parent Directory      
-* R                     -> Refresh               
-* S                     -> Search                
-* U                     -> Toggle Hidden         
-* W                     -> Collapse              
-* Y                     -> Copy Relative Path    
-* a                     -> Create                
-* bmv                   -> Move Bookmarked       
-* c                     -> Copy                  
-* ]c                    -> Next Git              
-* [c                    -> Prev Git              
-* d                     -> Delete                
-* ]e                    -> Next Diagnostic       
-* e                     -> CD                    
-* [e                    -> Prev Diagnostic       
-* f                     -> Filter                
-* g?                    -> Help                  
-* gy                    -> Copy Absolute Path    
-* h                     -> Close Directory       
-* l                     -> Open                  
-* m                     -> Toggle Bookmark       
-* o                     -> Open                  
-* p                     -> Paste                 
-* q                     -> Close                 
-* r                     -> Rename                
-* s                     -> Run System            
-* u                     -> Up                    
-* v                     -> Open: Vertical Split  
-* x                     -> Cut                   
-* y                     -> Copy Name             
-* z                     -> Open: Horizontal Split
 
 ### themes: 
+```viml
        - gruvbox
        - gruvbox baby
        - vscode
@@ -187,17 +189,20 @@
        - nord
        - monokai-pro
        - miasama
+```
 
 ### nvim-cmp: 
+```viml
         
-* <C-d>                  -> scroll down docs
-* <C-v>                  -> scroll up docs
-* <C-n>                  -> select next item
-* <C-p>                  -> select previous item
-* <C-y>                  -> disable the cmp completion
-* <C-b>                  -> abort the cmp suggestion or completion
-* <C-space>              -> toggle the cmp completion
-* <C-f>                  -> confirm or select the current selection completion option
+1. <C-d>                  : scroll down docs
+2. <C-v>                  : scroll up docs
+3. <C-n>                  : select next item
+4. <C-p>                  : select previous item
+5. <C-y>                  : disable the cmp completion
+6. <C-b>                  : abort the cmp suggestion or completion
+7. <C-space>              : toggle the cmp completion
+8. <C-f>                  : confirm or select the current selection completion option
+```
         
 ### nvim-dap:
 
@@ -208,103 +213,97 @@
 *--
 
 ### Telescope:
-
-* n = {
-* <c-o> 		         -> action_layout.toggle_preview,
-* <c-e> 		         -> actions.close,
-* <Tab> 		         -> actions.toggle_selection + actions.move_selection_next,
-* <S-Tab> 	             -> actions.toggle_selection + actions.move_selection_previous,
-* i = {
-* <Tab> 		         -> actions.toggle_selection,
-* <S-Tab> 	             -> actions.toggle_selection + actions.move_selection_previous,
-* <c-o> 		         -> action_layout.toggle_preview,
-* <c-e> 		         -> actions.close,
-* <c-j> 		         -> actions.move_selection_next,
-* <c-k> 		         -> actions.move_selection_previous,
-* <C-q> 		         -> actions.smart_send_to_qflist,
-* <C-i> 	             -> actions.smart_send_to_qflist,
-* <C-f> 		         -> actions.smart_send_to_qflist + actions.open_qflist,
-* <C-c>                  -> close telescope
-* <C-/>                  -> show/toggle keymaps for particular telescope window in insert mode
-* ?                      -> show/toggle keymaps for particular telescope window in normal mode
-* <leader>go             -> Telescope git status
-* <leader>gb             -> Telescope git branches
-* <leader>gc             -> Telescope git commits
-* <leader>sd             -> file browser home directory
-* <leader>sm             -> show manual pages in telescope
-* <leader>so             -> show old files in telescope
-* <leader>sf             -> fild files in telescope
-* <leader>sR             -> show registers in telescope
-* <leader>sr             -> resume telescope to last place
-* <leader>sk             -> show all keympas in telescope
-* <leader>sc             -> show all commands in telescope
-* <leader>sp             -> show all projects in telescope
-* <leader>sq             -> show quickfix in telescope
-* <leader>si             -> show internet bookmarks in telescope
-* <leader>sb             -> show buffers in telescope
-* <leader>se             -> file browser current
-* <leader>ss             -> live grep
-* <leader>sE             -> env vairables in telescope
-* <leader>sl             -> fuzzy find buffer content in telescope
-* <leader>sh             -> search dotfiles in telescope
-
+```viml
+1. n = {
+2. <c-o> 		           : action_layout.toggle_preview,
+3. <c-e> 		           : actions.close,
+4. <Tab> 		           : actions.toggle_selection + actions.move_selection_next,
+5. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
+6. i = {
+7. <Tab> 		           : actions.toggle_selection,
+8. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
+9. <c-o> 		           : action_layout.toggle_preview,
+10. <c-e> 		           : actions.close,
+11. <c-j> 		           : actions.move_selection_next,
+12. <c-k> 		           : actions.move_selection_previous,
+13. <C-q> 		           : actions.smart_send_to_qflist,
+14. <C-i> 	               : actions.smart_send_to_qflist,
+15. <C-f> 		           : actions.smart_send_to_qflist + actions.open_qflist,
+16. <C-c>                  : close telescope
+17. <C-/>                  : show/toggle keymaps for particular telescope window in insert mode
+18. ?                      : show/toggle keymaps for particular telescope window in normal mode
+19. <leader>go             : Telescope git status
+20. <leader>gb             : Telescope git branches
+21. <leader>gc             : Telescope git commits
+22. <leader>sd             : file browser home directory
+23. <leader>sm             : show manual pages in telescope
+24. <leader>so             : show old files in telescope
+25. <leader>sf             : fild files in telescope
+26. <leader>sR             : show registers in telescope
+27. <leader>sr             : resume telescope to last place
+28. <leader>sk             : show all keympas in telescope
+29. <leader>sc             : show all commands in telescope
+30. <leader>sp             : show all projects in telescope
+31. <leader>sq             : show quickfix in telescope
+32. <leader>si             : show internet bookmarks in telescope
+33. <leader>sb             : show buffers in telescope
+34. <leader>se             : file browser current
+35. <leader>ss             : live grep
+36. <leader>sE             : env vairables in telescope
+37. <leader>sl             : fuzzy find buffer content in telescope
+38. <leader>sh             : search dotfiles in telescope
+```
 
 ### Fzf-lua:
+```viml
 
 
-* <F1> 					    -> "toggle-help",
-* <F2> 					    -> "toggle-fullscreen",
-        
-* -- Only valid with the 'builtin' previewer
-        
-* <F3> 					    -> "toggle-preview-wrap",
-* <C-o> 					-> "toggle-preview",
-        
-* -- Rotate preview clockwise/counter-clockwise
-        
-* <F5> 					    -> "toggle-preview-ccw",
-* <F6> 					    -> "toggle-preview-cw",
-* <C-z> 					-> "preview-page-down",
-* <C-u> 					-> "preview-page-up",
-* <S-l> 					-> "preview-page-reset",
-* ctrl-d 					-> "abort",
-* ctrl-u 					-> "unix-line-discard",
-* ctrl-f 					-> "half-page-down",
-* ctrl-b 					-> "half-page-up",
-* ctrl-a 					-> "select-all",
-* ctrl-e 					-> "end-of-line",
-* ctrl-g 					-> "toggle-all",
-        
-* -- Only valid with fzf previewers (bat/cat/git/etc)
-        
-* f3 					    -> "toggle-preview-wrap",
-* f4 					    -> "toggle-preview",
-* shift-down 		     	-> "preview-page-down",
-* shift-up 					-> "preview-page-up",
-* default 					-> actions.file_edit_or_qf,
-* ctrl-s 					-> actions.file_split,
-* ctrl-v 					-> actions.file_vsplit,
-* ctrl-t 					-> actions.file_tabedit,
-* ctrl-f 					-> actions.file_sel_to_qf,
-* default 					-> actions.buf_edit,
-* ctrl-s 					-> actions.buf_split,
-* ctrl-v 					-> actions.buf_vsplit,
-* ctrl-t 					-> actions.buf_tabedit,
-* ctrl-t 					-> actions.buf_tabedit,
-* <leader>qf 				-> search for current word under cursor in all buffers
-* <leader>ff 				-> search for files in current dir
-* <leader>fs 				-> live grep with fzf
-* <leader>fc 				-> colorscheme select with fzf
-* <leader>fb 				-> search for lines in current buffer
-* <leader>fl 				-> search for lines in bufferlist
-* <leader>fr 				-> resume fzf 
-* <leader>fh 				-> search for files from home directory
-* <leader>fw                -> search for current word under the cursor in active buffer
+1.   <F1> 					    : "toggle-help",
+2.   <F2> 					    : "toggle-fullscreen",
+3.   <F3> 					    : "toggle-preview-wrap",
+4.   <C-o> 					: "toggle-preview",
+5.   <F5> 					    : "toggle-preview-ccw",
+6.   <F6> 					    : "toggle-preview-cw",
+7.   <C-z> 					: "preview-page-down",
+8.   <C-u> 					: "preview-page-up",
+9.   <S-l> 					: "preview-page-reset",
+10.  ctrl-d 					: "abort",
+11.  ctrl-u 					: "unix-line-discard",
+12.  ctrl-f 					: "half-page-down",
+13.  ctrl-b 					: "half-page-up",
+14.  ctrl-a 					: "select-all",
+15.  ctrl-e 					: "end-of-line",
+16.  ctrl-g 					: "toggle-all",
+17.  f3 					    : "toggle-preview-wrap",
+18.  f4 					    : "toggle-preview",
+19.  shift-down 		     	: "preview-page-down",
+20.  shift-up 					: "preview-page-up",
+21.  default 					: actions.file_edit_or_qf,
+22.  ctrl-s 					: actions.file_split,
+23.  ctrl-v 					: actions.file_vsplit,
+24.  ctrl-t 					: actions.file_tabedit,
+25.  ctrl-f 					: actions.file_sel_to_qf,
+26.  default 					: actions.buf_edit,
+27.  ctrl-s 					: actions.buf_split,
+28.  ctrl-v 					: actions.buf_vsplit,
+29.  ctrl-t 					: actions.buf_tabedit,
+30.  ctrl-t 					: actions.buf_tabedit,
+31.  <leader>qf 				: search for current word under cursor in all buffers
+32.  <leader>ff 				: search for files in current dir
+33.  <leader>fs 				: live grep with fzf
+34.  <leader>fc 				: colorscheme select with fzf
+35.  <leader>fb 				: search for lines in current buffer
+36.  <leader>fl 				: search for lines in bufferlist
+37.  <leader>fr 				: resume fzf 
+38.  <leader>fh 				: search for files from home directory
+39.  <leader>fw                 : search for current word under the cursor in active buffer
+```
         
 
 ### lsp-signature:
-
-* <C-y>                     -> toggle the signature toggle
+```viml
+1. <C-y>                     : toggle the signature toggle
+```
 
 
 ### fidget:
@@ -312,12 +311,14 @@
         --*
 
 ### nvim-surround:
+```viml
 
-* ysi[object]               -> surround object with object surround
-* ysi[object]               -> surround object with object surround
-* yss                       -> surround line
-* css                       -> change surround
-* dss                       -> delete surround
+1.  ysi[object]               : surround object with object surround
+2.  ysi[object]               : surround object with object surround
+3.  yss                       : surround line
+4.  css                       : change surround
+5.  dss                       : delete surround
+```
 
 ### nvim-dev-icons:
 
@@ -329,76 +330,78 @@
        
 ### nvim-treesitter:
 
-       
-* <c-space> 				-> init_selection 
-* <c-space> 				-> node_incremental 
-* <c-s> 				    -> scope_incremental 
-* <c-backspace> 			-> node_decremental 
-* <operation>[aa]   	    -> @parameter.outer
-* <operation>[ia]    		    -> @parameter.inner
-* <operation>[af]   		-> @function.outer
-* <operation>[if		    -> @function.inner
-* <operation>[aq]			-> @conditional.outer
-* <operation>[iq]   		-> @conditional.inner
-* <operation>[ar]   		-> @loop.outer
-* <operation>[ir]   		-> @loop.inner
-* <operation>[ac]   		-> @class.outer
-* <operation>[ic]   		-> @class.inner
-* <leader>fd                -> function.outer
-* <leader>fD                -> class.outer
-* ]f                        -> @function.outer forward search start
-* ]c                        -> k@class.outer forward search start
-* ]q                        -> k@conditional.outer forward search start
-* ]r                        -> k@loop.outer forward search start
-* ]s                        -> k@statement.outer forward search start
-* [f                        -> k@function.inner backward search start
-* [c                        -> k@class.inner backward search start
-* [q                        -> k@conditional.inner backward search start
-* [r                        -> k@loop.inner backward search start
-* [s                        -> k@statement.inner backward search start
-* <leader>nf                -> @function.outer search end
-* <leader>nc                -> @class.outer search end
-* <leader>nq                -> @conditional.outer search end
-* <leader>nr                -> @loop.outer search end
-* <leader>ns                -> @statement.outer search end
-* <leader>mf                -> @function.outer search end
-* <leader>mc                -> @class.outer search end
-* <leader>mq                -> @conditional.outer search end
-* <leader>mr                -> @loop.outer search end
-* <leader>ms                -> @statement.outer search end
-* <leader>lR                -> smart_rename
-* gnd                       -> goto_definition
-* gnD                       -> list_definitions
-* gO                        -> list_definitions_toc
-* <C-*>                     -> goto_next_usage
-* <C-#>                     -> goto_previous_usage
-* <leader>a                 -> swap the args
-* <leader>hs                -> move to start of text object
-* <leader>he                -> move to end of text object
+```viml      
+1.   <c-space> 				   : init_selection 
+2.   <c-space> 				   : node_incremental 
+3.   <c-s> 				       : scope_incremental 
+4.   <c-backspace> 			   : node_decremental 
+5.   <operation>[aa]   	       : @parameter.outer
+6.   <operation>[ia]    	   : @parameter.inner
+7.   <operation>[af]   		   : @function.outer
+8.   <operation>[if		       : @function.inner
+9.   <operation>[aq]		   : @conditional.outer
+10.  <operation>[iq]   		   : @conditional.inner
+11.  <operation>[ar]   		   : @loop.outer
+12.  <operation>[ir]   		   : @loop.inner
+13.  <operation>[ac]   		   : @class.outer
+14.  <operation>[ic]   		   : @class.inner
+15.  <leader>fd                : function.outer
+16.  <leader>fD                : class.outer
+17.  ]f                        : @function.outer forward search start
+18.  ]c                        : k@class.outer forward search start
+19.  ]q                        : k@conditional.outer forward search start
+20.  ]r                        : k@loop.outer forward search start
+21.  ]s                        : k@statement.outer forward search start
+22.  [f                        : k@function.inner backward search start
+23.  [c                        : k@class.inner backward search start
+24.  [q                        : k@conditional.inner backward search start
+25.  [r                        : k@loop.inner backward search start
+26.  [s                        : k@statement.inner backward search start
+27.  <leader>nf                : @function.outer search end
+28.  <leader>nc                : @class.outer search end
+29.  <leader>nq                : @conditional.outer search end
+30.  <leader>nr                : @loop.outer search end
+31.  <leader>ns                : @statement.outer search end
+32.  <leader>mf                : @function.outer search end
+33.  <leader>mc                : @class.outer search end
+34.  <leader>mq                : @conditional.outer search end
+35.  <leader>mr                : @loop.outer search end
+36.  <leader>ms                : @statement.outer search end
+37.  <leader>lR                : smart_rename
+38.  gnd                       : goto_definition
+39.  gnD                       : list_definitions
+40.  gO                        : list_definitions_toc
+41.  <C-*>                     : goto_next_usage
+42.  <C-#>                     : goto_previous_usage
+43.  <leader>a                 : swap the args
+44.  <leader>hs                : move to start of text object
+45.  <leader>he                : move to end of text object
+```
 
 
 ### Hop:
-
-* <leader>hw							-> HopWord
-* <leader>hp							-> HopPattern
-* <leader>hc							-> HopChar1
-* <leader>hC							-> HopChar2
-* <leader>hl							-> HopLine
-* <leader>hdw							-> delete till the HopWord
-* <leader>hdp							-> deltel till the HopPattern
-* <leader>hdc							-> delte till the HopChar1
-* <leader>hdC							-> delete till the HopChar2
-* <leader>hdl							-> delete till theHopLine
-* <leader>hkw							-> change till HopWord
-* <leader>hkp							-> change till HopPattern
-* <leader>hkc							-> change till HopChar1
-* <leader>hkC							-> change till HopChar2
-* <leader>hkl							-> change till HopLine
-* <leader>hyw							-> copy till the HopWord
-* <leader>hyp							-> copy till the  HopPattern
-* <leader>hyc							-> copy till the HopChar1
-* <leader>hyC							-> copy till the HopChar2
-* <leader>hyl							-> copy till the HopLine
+```viml
+1 .  <leader>hw			       : HopWord
+2 .  <leader>hp       		   : HopPattern
+3 .  <leader>hc				   : HopChar1
+4 .  <leader>hC				   : HopChar2
+5 .  <leader>hl				   : HopLine
+6 .  <leader>hdw		       : delete till the HopWord
+7 .  <leader>hdp			   : deltel till the HopPattern
+8 .  <leader>hdc			   : delte till the HopChar1
+9 .  <leader>hdC			   : delete till the HopChar2
+10.  <leader>hdl			   : delete till theHopLine
+11.  <leader>hkw			   : change till HopWord
+12.  <leader>hkp			   : change till HopPattern
+13.  <leader>hkc			   : change till HopChar1
+14.  <leader>hkC			   : change till HopChar2
+15.  <leader>hkl			   : change till HopLine
+16.  <leader>hyw			   : copy till the HopWord
+17.  <leader>hyp			   : copy till the  HopPattern
+18.  <leader>hyc			   : copy till the HopChar1
+19.  <leader>hyC			   : copy till the HopChar2
+20.  <leader>hyl			   : copy till the HopLine
+```
 
 ### Lualine:
 
@@ -406,8 +409,9 @@
 
 
 ### vim-matchup: 
-    
-* %                                     -> match parenthesis and other objects
+```viml   
+1. %                                     : match parenthesis and other objects
+```
 
 ### buffer-line: 
 
@@ -420,27 +424,31 @@
 
 ## toggleterm:
 
-* <C-\>                                ->  open toggleterm
-* <leader>tn                           ->  open node terminal
-* <leader>tm                           ->  open glow 
-* <leader>tu                           ->  open ncdu disk utility
-* <leader>tt                           ->  open htop
-* <leader>tp                           ->  open python terminal
-* <leader>tg                           ->  open lazygit
-* <leader>tl                           ->  open lua terminal
-* <leader>tf                           ->  open float terminal
-* <leader>th                           ->  open horizontal terminal
-* <leader>tv                           ->  open vertical terminal
+```viml
+1.  <C-\>                                :  open toggleterm
+2.  <leader>tn                           :  open node terminal
+3.  <leader>tm                           :  open glow 
+4.  <leader>tu                           :  open ncdu disk utility
+5.  <leader>tt                           :  open htop
+6.  <leader>tp                           :  open python terminal
+7.  <leader>tg                           :  open lazygit
+8.  <leader>tl                           :  open lua terminal
+9.  <leader>tf                           :  open float terminal
+10. <leader>th                           :  open horizontal terminal
+11. <leader>tv                           :  open vertical terminal
+```
 
 ### comment:
  
-* gcc                                  -> comment full line
-* gbc                                  -> comment full block
-* gc[operator][object]                 -> comment text object
-* gb[operator][object]                 -> comment block object
-* gcO                                  -> open a comment line above
-* gco                                  -> open a comment line below
-* gcA                                  -> Add comment at end of line
+```viml
+1. gcc                                  : comment full line
+2. gbc                                  : comment full block
+3. gc[operator][object]                 : comment text object
+4. gb[operator][object]                 : comment block object
+5. gcO                                  : open a comment line above
+6. gco                                  : open a comment line below
+7. gcA                                  : Add comment at end of line
+```
         
 
 
@@ -451,17 +459,21 @@
 
 ### mason:
 
-* <leader>lI                            -> mason installer info
+```viml
+1. <leader>lI                            : mason installer info
+```
 
 
 ### lsp-config:
 
-* gD                                    -> definition preview
-* gd                                    -> goto definition
-* K                                     -> hover definition
-* <leader>D                             -> type definition
-* [d                                    -> goto previous diagnostic
-* ]d                                    -> goto next diagnostic
+```viml
+1. gD                                    : definition preview
+2. gd                                    : goto definition
+3. K                                     : hover definition
+4. <leader>D                             : type definition
+5. [d                                    : goto previous diagnostic
+6. ]d                                    : goto next diagnostic
+```
         
 
 ### lsp-kind:
@@ -471,19 +483,21 @@
 
 ### symbol-outline:
 
-* <leader>st                            -> open symbol-outline
-*  <Esc>,q                              -> close
-*  <Cr>                                 -> goto_location
-*  o                                    -> focus_location
-*  <C-space>                            -> hover_symbol
-*  K                                    -> toggle_preview
-*  r                                    -> rename_symbol
-*  a                                    -> code_actions
-*  h                                    -> fold
-*  l                                    -> unfold
-*  W                                    -> fold_all
-*  E                                    -> unfold_all
-*  R                                    -> fold_reset
+```viml
+1. <leader>st                           : open symbol-outline
+2. <Esc>,q                              : close
+3. <Cr>                                 : goto_location
+4. o                                    : focus_location
+5. <C-space>                            : hover_symbol
+6. K                                    : toggle_preview
+7. r                                    : rename_symbol
+8. a                                    : code_actions
+9. h                                    : fold
+10. l                                   : unfold
+11. W                                   : fold_all
+12. E                                   : unfold_all
+13. R                                   : fold_reset
+```
 
 ### indent-blankline:
 
@@ -491,27 +505,34 @@
 
 ### null-config:
 
-* <leader>lp                             -> goto the definition but in a float buffer 
+```viml
+1 <leader>lp                             : goto the definition but in a float buffer 
+```
+
 
 
 ### git-signs:
 
-* ]g                                    -> next hunk git
-* [g                                    -> previous hunt git
-* <leader>gg                            -> open lazygit
-* <leader>gj                            -> next hunk git
-* <leader>gk                            -> previous hunk git
-* <leader>ga                            -> set changes in quickfix list
-* <leader>gl                            -> see the line blame
-* <leader>gp                            -> peview the hunk
-* <leader>gs                            -> stage hunk
-* <leader>gf                            -> stage buffer
-* <leader>gu                            -> undo stage hunk
-* <leader>gd                            -> use diff in git signs
+```viml
+1. ]g                                    : next hunk git
+2. [g                                    : previous hunt git
+3. <leader>gg                            : open lazygit
+4. <leader>gj                            : next hunk git
+5. <leader>gk                            : previous hunk git
+6. <leader>ga                            : set changes in quickfix list
+7. <leader>gl                            : see the line blame
+8. <leader>gp                            : peview the hunk
+9. <leader>gs                            : stage hunk
+10. <leader>gf                           : stage buffer
+11. <leader>gu                           : undo stage hunk
+12. <leader>gd                           : use diff in git signs
+```
 
 ### jaq-nvim:
 
-* <leader>r                             -> Jaq run code
+```viml
+1. <leader>r                             : Jaq run code
+```
 
 
 ### nvim-bqf:
@@ -520,122 +541,134 @@
 
 ### codewindow-nvim:
 
-* <leader>mo                            -> open the minimap
-* <leader>mc                            -> close the minimap
-* <leader>mf                            -> focus/unfocus the minimap
-* <leader>mm                            -> toggle the minimap
+```viml
+1. <leader>mo                            : open the minimap
+2. <leader>mc                            : close the minimap
+3. <leader>mf                            : focus/unfocus the minimap
+4. <leader>mm                            : toggle the minimap
+```
 
        
 ### tabout.nvim:
 
-* <Tab>                                 -> get out of the objecs
-* <S-Tab>                               -> get out of the objecs
-* <C-t>
-* <C-d>
+```viml
+1. <Tab>                                 : get out of the objecs
+2. <S-Tab>                               : get out of the objecs
+3. <C-t>
+4. <C-d>
+```
 
 
 ### undotree:
 
-* <leader>lu                            -> open undo tree
+```viml
+1. <leader>lu                            : open undo tree
+```
 
 
 ### lazy-vim:
 
-* <leader>pi                            -> Lazy install plugins
-* <leader>pu                            -> Lazy update plugins
-* <leader>pc                            -> Lazy clean / remove plugins
-* <leader>pp                            -> Lazy open home window
+```viml
+1. <leader>pi                            : Lazy install plugins
+2. <leader>pu                            : Lazy update plugins
+3. <leader>pc                            : Lazy clean / remove plugins
+4. <leader>pp                            : Lazy open home window
+```
 
 ### harpoon:
 
-* <leader>ho                            -> open harpoon
-* <leader>ha                            -> add file to harpoon
-* <leader>hz                            -> goto next file in harpoon
-* <leader>hx                            -> goto previous file in harpoon
-* ]1                                    -> go to 1st file in harpoon list
-* ]2                                    -> go to 2nd file in harpoon list
-* ]3                                    -> go to 3rd file in harpoon list
-* ]4                                    -> go to 4th file in harpoon list
-* ]5                                    -> go to 5th file in harpoon list
-* ]6                                    -> go to 6th file in harpoon list
-* ]7                                    -> go to 7th file in harpoon list
-* ]8                                    -> go to 8th file in harpoon list
-* ]9                                    -> go to 9th file in harpoon list
+```viml
+1.  <leader>ho                            : open harpoon
+2.  <leader>ha                            : add file to harpoon
+3.  <leader>hz                            : goto next file in harpoon
+4.  <leader>hx                            : goto previous file in harpoon
+5.  ]1                                    : go to 1st file in harpoon list
+6.  ]2                                    : go to 2nd file in harpoon list
+7.  ]3                                    : go to 3rd file in harpoon list
+8.  ]4                                    : go to 4th file in harpoon list
+9.  ]5                                    : go to 5th file in harpoon list
+10. ]6                                    : go to 6th file in harpoon list
+11. ]7                                    : go to 7th file in harpoon list
+12. ]8                                    : go to 8th file in harpoon list
+13. ]9                                    : go to 9th file in harpoon list
+```
 
 ### editor config:
 
-* [object]il                            -> inside line
-* [object]al                            -> outside line
-* <leader>hh                            -> highlight current line
-* <leader>hv                            -> clear hls and clear highlight lines
-* <leader>bo                            -> delete all buffer except current
-* <leader>be                            -> delete all empty buffers
-* <leader>be                            -> delete all empty buffers
-* jk                                    -> enter normal mode
-* kj                                    -> enter normal mode
-* <Tab>                                 -> next buffer in normal mode
-* <S-Tab>                               -> previous buffer in normal mode
-* <leader>d                             -> delete the current buffer
-* <leader>,                             -> source the $MYVIMRC
-* <leader>k                             -> see the native docs
-* <leader>c                             -> make last saved session
-* <leader>y                             -> copy full text to + clipboard
-* <leader>y                             -> copy full text to + clipboard
-* n                                     -> goto next match but center the viewport
-* N                                     -> goto previous match but center the viewport
-* <leader>z                             -> open the $VIMRC
-* <leader>n)                            -> next bracket )
-* <leader>n(                            -> next bracket (
-* <leader>m(                            -> Previous bracket (
-* <leader>m)                            -> Previous bracket )
-* ]a                                    -> make a array of strings
-* ]e                                    -> make a array of chars without quotes
-* ]e                                    -> make a array of chars without quotes
-* <leader>nv                            -> find next variable
-* <leader>mv                            -> find previous variable
-* <leader>O                             -> open line above without moving cursor in normal mode
-* <leader>o                             -> open line above and below in normal mode
-* <leader>nn                            -> find next number 
-* <leader>mn                            -> find previous number 
-* <leader>nt                            -> find next bracket tag
-* <leader>mt                            -> find previous bracket tag
-* <leader>n]                            -> next bracket ]
-* <leader>m]                            -> prvious bracket ]
-* <leader>n[                            -> next bracket [
-* <leader>m[                            -> previous bracket [
-* <leader>n{                            -> next bracket {
-* <leader>m}                            -> previous bracket }
-* <leader>n'                            -> next bracket '
-* <leader>m'                            -> previous bracket '
-* <leader>n"                            -> next bracket "
-* <leader>m"                            -> previous bracket "
-* <leader>n`                            -> next bracket `
-* <leader>m`                            -> previous bracket `
-* <leader>ne                            -> next  =
-* <leader>me                            -> previous  =
-* <leader>na                            -> next  +
-* <leader>ma                            -> previous  +
-* <leader>ns                            -> next  -
-* <leader>ms                            -> previous  -
-* <leader>nd                            -> next  _
-* <leader>md                            -> previous  _
-* <leader>w                             -> save current buffer
-* <leader>pz                            -> open lazy config
-* <leader>ps                            -> source current file
-* <leader>qw                            -> search for current word under cursor place results in qfix
-* <leader>qq                            -> open qfixlist
-* <leader>qe                            -> close qfixlist
-* <leader>ql                            -> open locationlist
-* <leader>qo                            -> close locationlist
-* <leader>la                            -> code action
-* <leader>ld                            -> diagnostic results in qfix
-* <leader>lx                            -> make current file executable
-* <leader>lw                            -> workplace diagnostic in qfix
-* <leader>li                            -> lspinfo of current file
-* <leader>ll                            -> lspstart
-* <leader>lq                            -> lsp stop
-* <leader>lr                            -> document references
-* <leader>ls                            -> document symbols
-* <leader>le                            -> document diagnostic hover on current line
-* <leader>lS                            -> document symbols for workspace
+```viml
+1.   [object]il                            : inside line
+2.   [object]al                            : outside line
+3.   <leader>hh                            : highlight current line
+4.   <leader>hv                            : clear hls and clear highlight lines
+5.   <leader>bo                            : delete all buffer except current
+6.   <leader>be                            : delete all empty buffers
+7.   <leader>be                            : delete all empty buffers
+8.   jk                                    : enter normal mode
+9.   kj                                    : enter normal mode
+10.  <Tab>                                 : next buffer in normal mode
+11.  <S-Tab>                               : previous buffer in normal mode
+12.  <leader>d                             : delete the current buffer
+13.  <leader>,                             : source the $MYVIMRC
+14.  <leader>k                             : see the native docs
+15.  <leader>c                             : make last saved session
+16.  <leader>y                             : copy full text to + clipboard
+17.  <leader>y                             : copy full text to + clipboard
+18.  n                                     : goto next match but center the viewport
+19.  N                                     : goto previous match but center the viewport
+20.  <leader>z                             : open the $VIMRC
+21.  <leader>n)                            : next bracket )
+22.  <leader>n(                            : next bracket (
+23.  <leader>m(                            : Previous bracket (
+24.  <leader>m)                            : Previous bracket )
+25.  ]a                                    : make a array of strings
+26.  ]e                                    : make a array of chars without quotes
+27.  ]e                                    : make a array of chars without quotes
+28.  <leader>nv                            : find next variable
+29.  <leader>mv                            : find previous variable
+30.  <leader>O                             : open line above without moving cursor in normal mode
+31.  <leader>o                             : open line above and below in normal mode
+32.  <leader>nn                            : find next number 
+33.  <leader>mn                            : find previous number 
+34.  <leader>nt                            : find next bracket tag
+35.  <leader>mt                            : find previous bracket tag
+36.  <leader>n]                            : next bracket ]
+37.  <leader>m]                            : prvious bracket ]
+38.  <leader>n[                            : next bracket [
+39.  <leader>m[                            : previous bracket [
+40.  <leader>n{                            : next bracket {
+41.  <leader>m}                            : previous bracket }
+42.  <leader>n'                            : next bracket '
+43.  <leader>m'                            : previous bracket '
+44.  <leader>n"                            : next bracket "
+45.  <leader>m"                            : previous bracket "
+46.  <leader>n`                            : next bracket `
+47.  <leader>m`                            : previous bracket `
+48.  <leader>ne                            : next  =
+49.  <leader>me                            : previous  =
+50.  <leader>na                            : next  +
+51.  <leader>ma                            : previous  +
+52.  <leader>ns                            : next  -
+53.  <leader>ms                            : previous  -
+54.  <leader>nd                            : next  _
+55.  <leader>md                            : previous  _
+56.  <leader>w                             : save current buffer
+57.  <leader>pz                            : open lazy config
+58.  <leader>ps                            : source current file
+59.  <leader>qw                            : search for current word under cursor place results in qfix
+60.  <leader>qq                            : open qfixlist
+61.  <leader>qe                            : close qfixlist
+62.  <leader>ql                            : open locationlist
+63.  <leader>qo                            : close locationlist
+64.  <leader>la                            : code action
+65.  <leader>ld                            : diagnostic results in qfix
+66.  <leader>lx                            : make current file executable
+67.  <leader>lw                            : workplace diagnostic in qfix
+68.  <leader>li                            : lspinfo of current file
+69.  <leader>ll                            : lspstart
+70.  <leader>lq                            : lsp stop
+71.  <leader>lr                            : document references
+72.  <leader>ls                            : document symbols
+73.  <leader>le                            : document diagnostic hover on current line
+74.  <leader>lS                            : document symbols for workspace
+```
         
