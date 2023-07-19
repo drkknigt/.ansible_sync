@@ -1,12 +1,5 @@
 # NEOVIM PLUGIN USED AND KEYMAPS USER DEFINED  
 
-```viml
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-```
 
 ## FOLDER STRUCTURE
                   
@@ -107,7 +100,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 ### vim-startuptime: 
 ```viml
-* leaderpt               : find the startup time
+* <leader>pt               : find the startup time
 * K                      : Press `K` on events to get additional information.
 * gf                     : Press `gf` on sourcing events to load the corresponding file
 * :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
