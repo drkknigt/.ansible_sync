@@ -106,11 +106,12 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 #### leader-key = Space
 
 ### vim-startuptime: 
-    
-* leaderpt             : find the startup time
+```viml
+* leaderpt               : find the startup time
 * K                      : Press `K` on events to get additional information.
 * gf                     : Press `gf` on sourcing events to load the corresponding file
 * :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
+```
 
 ### better-escape: 
 
