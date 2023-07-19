@@ -92,35 +92,35 @@
     └── snap_1
 ```
     
----------------------------------------------------------------------------------------------------
 
 
 ## PLUGINS and their Mappings
-------------------------
+
 
 #### leader-key = Space
+-----------------------
 
 ### vim-startuptime: 
 ```viml
-* <leader>pt               : find the startup time
-* K                      : Press `K` on events to get additional information.
-* gf                     : Press `gf` on sourcing events to load the corresponding file
-* :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
+1. <leader>pt               : find the startup time
+2. K                      : Press `K` on events to get additional information.
+3. gf                     : Press `gf` on sourcing events to load the corresponding file
+4. :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
 ```
 
 ### better-escape: 
 
-* --
+--
 
 ### nvim-tree:
-    
-* <leader>e  			-> open nvim file explorer
-* g?      			    -> show the mappings
-* <C-]>   			    -> change directory
-* <C-e>   			    -> OPen in place
-* <C-k>   			    -> info on the file
-* <2-LeftMouse>         -> Open                  
-* <2-RightMouse>        -> CD                    
+```
+1. <leader>e  			-> open nvim file explorer
+2. g?      			    -> show the mappings
+3. <C-]>   			    -> change directory
+4. <C-e>   			    -> OPen in place
+5. <C-k>   			    -> info on the file
+6. <2-LeftMouse>         -> Open                  
+7. <2-RightMouse>        -> CD                    
 * <C-]>                 -> CD                    
 * <C-E>                 -> Open: In Place        
 * <C-K>                 -> Info                  
