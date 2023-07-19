@@ -100,7 +100,7 @@
 
 ### vim-startuptime: 
     
-* <leader>pt             -> find the startup time
+* \<leader\>pt             -> find the startup time
 * K                      -> Press `K` on events to get additional information.
 * gf                     -> Press `gf` on sourcing events to load the corresponding file
 * :Startuptime --tries N -> `--tries` specifies how many startup times are averaged.
