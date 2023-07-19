@@ -206,11 +206,11 @@
         
 ### nvim-dap:
 
-* --
+---
 
 ### DAPInsall.nvim:
 
-*--
+---
 
 ### Telescope:
 ```viml
@@ -308,7 +308,7 @@
 
 ### fidget:
 
-        --*
+---
 
 ### nvim-surround:
 ```viml
@@ -322,11 +322,11 @@
 
 ### nvim-dev-icons:
 
-        --*
+---
 
 ### vim-dev-icons:
 
-        --*
+---
        
 ### nvim-treesitter:
 
@@ -405,7 +405,7 @@
 
 ### Lualine:
 
-        --*
+---
 
 
 ### vim-matchup: 
@@ -415,12 +415,12 @@
 
 ### buffer-line: 
 
-        --*
+---
     
 ### which-key:
 
 
-        --*
+---
 
 ## toggleterm:
 
@@ -454,7 +454,7 @@
 
 ### popup:
 
-        --*
+---
 
 
 ### mason:
@@ -478,7 +478,7 @@
 
 ### lsp-kind:
 
-        --*
+---
 
 
 ### symbol-outline:
@@ -501,7 +501,7 @@
 
 ### indent-blankline:
 
-        --*
+---
 
 ### null-config:
 
@@ -537,7 +537,7 @@
 
 ### nvim-bqf:
 
-        --*
+---
 
 ### codewindow-nvim:
 
