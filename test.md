@@ -3,7 +3,7 @@
 
 ## FOLDER STRUCTURE
                   
-/home/drkknght/.config/nvim/
+.config/nvim/  
 ├── ayu_mirage.lua  
 ├── doc.txt  
 ├── init.lua  
