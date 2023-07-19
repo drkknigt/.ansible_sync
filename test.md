@@ -180,15 +180,15 @@
 
 ### themes: 
 ```viml
-       - gruvbox
-       - gruvbox baby
-       - vscode
-       - tokoyonight
-       - zephyr
-       - catpuccin
-       - nord
-       - monokai-pro
-       - miasama
+1. gruvbox
+2. gruvbox baby
+3. vscode
+4. tokoyonight
+5. zephyr
+6. catpuccin
+7. nord
+8. monokai-pro
+9. miasama
 ```
 
 ### nvim-cmp: 
