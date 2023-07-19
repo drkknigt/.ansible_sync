@@ -102,10 +102,10 @@
 
 ### vim-startuptime: 
 ```viml
-1. <leader>pt               : find the startup time
-2. K                      : Press `K` on events to get additional information.
-3. gf                     : Press `gf` on sourcing events to load the corresponding file
-4. :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
+1. <leader>pt                    : find the startup time
+2. K                             : Press `K` on events to get additional information.
+3. gf                            : Press `gf` on sourcing events to load the corresponding file
+4. :Startuptime --tries N        : `--tries` specifies how many startup times are averaged.
 ```
 
 ### better-escape: 
@@ -114,11 +114,11 @@
 
 ### nvim-tree:
 ```viml
-1. <leader>e  			   : open nvim file explorer
-2. g?      			       : show the mappings
-3. <C-]>   			       : change directory
-4. <C-e>   			       : OPen in place
-5. <C-k>   			       : info on the file
+1. <leader>e  			       : open nvim file explorer
+2. g?      			           : show the mappings
+3. <C-]>   			           : change directory
+4. <C-e>   			           : OPen in place
+5. <C-k>   			           : info on the file
 6. <2-LeftMouse>           : Open                  
 7. <2-RightMouse>          : CD                    
 8. <C-]>                   : CD                    
@@ -215,20 +215,20 @@
 ### Telescope:
 ```viml
 1. n = {
-2. <c-o> 		           : action_layout.toggle_preview,
-3. <c-e> 		           : actions.close,
-4. <Tab> 		           : actions.toggle_selection + actions.move_selection_next,
+2. <c-o> 		               : action_layout.toggle_preview,
+3. <c-e> 		               : actions.close,
+4. <Tab> 		               : actions.toggle_selection + actions.move_selection_next,
 5. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
 6. i = {
-7. <Tab> 		           : actions.toggle_selection,
+7. <Tab> 		               : actions.toggle_selection,
 8. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
-9. <c-o> 		           : action_layout.toggle_preview,
-10. <c-e> 		           : actions.close,
-11. <c-j> 		           : actions.move_selection_next,
-12. <c-k> 		           : actions.move_selection_previous,
-13. <C-q> 		           : actions.smart_send_to_qflist,
+9. <c-o> 		               : action_layout.toggle_preview,
+10. <c-e> 		             : actions.close,
+11. <c-j> 		             : actions.move_selection_next,
+12. <c-k> 		             : actions.move_selection_previous,
+13. <C-q> 		             : actions.smart_send_to_qflist,
 14. <C-i> 	               : actions.smart_send_to_qflist,
-15. <C-f> 		           : actions.smart_send_to_qflist + actions.open_qflist,
+15. <C-f> 		             : actions.smart_send_to_qflist + actions.open_qflist,
 16. <C-c>                  : close telescope
 17. <C-/>                  : show/toggle keymaps for particular telescope window in insert mode
 18. ?                      : show/toggle keymaps for particular telescope window in normal mode
@@ -261,33 +261,33 @@
 1.   <F1> 					    : "toggle-help",
 2.   <F2> 					    : "toggle-fullscreen",
 3.   <F3> 					    : "toggle-preview-wrap",
-4.   <C-o> 					: "toggle-preview",
+4.   <C-o> 					    : "toggle-preview",
 5.   <F5> 					    : "toggle-preview-ccw",
 6.   <F6> 					    : "toggle-preview-cw",
-7.   <C-z> 					: "preview-page-down",
-8.   <C-u> 					: "preview-page-up",
-9.   <S-l> 					: "preview-page-reset",
-10.  ctrl-d 					: "abort",
-11.  ctrl-u 					: "unix-line-discard",
-12.  ctrl-f 					: "half-page-down",
-13.  ctrl-b 					: "half-page-up",
-14.  ctrl-a 					: "select-all",
-15.  ctrl-e 					: "end-of-line",
-16.  ctrl-g 					: "toggle-all",
-17.  f3 					    : "toggle-preview-wrap",
-18.  f4 					    : "toggle-preview",
-19.  shift-down 		     	: "preview-page-down",
+7.   <C-z> 					    : "preview-page-down",
+8.   <C-u> 					    : "preview-page-up",
+9.   <S-l> 					    : "preview-page-reset",
+10.  ctrl-d 					  : "abort",
+11.  ctrl-u 					  : "unix-line-discard",
+12.  ctrl-f 					  : "half-page-down",
+13.  ctrl-b 					  : "half-page-up",
+14.  ctrl-a 					  : "select-all",
+15.  ctrl-e 					  : "end-of-line",
+16.  ctrl-g 					  : "toggle-all",
+17.  f3 					      : "toggle-preview-wrap",
+18.  f4 					      : "toggle-preview",
+19.  shift-down 		   	: "preview-page-down",
 20.  shift-up 					: "preview-page-up",
-21.  default 					: actions.file_edit_or_qf,
-22.  ctrl-s 					: actions.file_split,
-23.  ctrl-v 					: actions.file_vsplit,
-24.  ctrl-t 					: actions.file_tabedit,
-25.  ctrl-f 					: actions.file_sel_to_qf,
-26.  default 					: actions.buf_edit,
-27.  ctrl-s 					: actions.buf_split,
-28.  ctrl-v 					: actions.buf_vsplit,
-29.  ctrl-t 					: actions.buf_tabedit,
-30.  ctrl-t 					: actions.buf_tabedit,
+21.  default 					  : actions.file_edit_or_qf,
+22.  ctrl-s 					  : actions.file_split,
+23.  ctrl-v 					  : actions.file_vsplit,
+24.  ctrl-t 					  : actions.file_tabedit,
+25.  ctrl-f 					  : actions.file_sel_to_qf,
+26.  default 					  : actions.buf_edit,
+27.  ctrl-s 					  : actions.buf_split,
+28.  ctrl-v 					  : actions.buf_vsplit,
+29.  ctrl-t 					  : actions.buf_tabedit,
+30.  ctrl-t 					  : actions.buf_tabedit,
 31.  <leader>qf 				: search for current word under cursor in all buffers
 32.  <leader>ff 				: search for files in current dir
 33.  <leader>fs 				: live grep with fzf
@@ -296,7 +296,7 @@
 36.  <leader>fl 				: search for lines in bufferlist
 37.  <leader>fr 				: resume fzf 
 38.  <leader>fh 				: search for files from home directory
-39.  <leader>fw                 : search for current word under the cursor in active buffer
+39.  <leader>fw         : search for current word under the cursor in active buffer
 ```
         
 
@@ -331,20 +331,20 @@
 ### nvim-treesitter:
 
 ```viml      
-1.   <c-space> 				   : init_selection 
-2.   <c-space> 				   : node_incremental 
-3.   <c-s> 				       : scope_incremental 
-4.   <c-backspace> 			   : node_decremental 
+1.   <c-space> 				         : init_selection 
+2.   <c-space> 				         : node_incremental 
+3.   <c-s> 				             : scope_incremental 
+4.   <c-backspace> 			       : node_decremental 
 5.   <operation>[aa]   	       : @parameter.outer
-6.   <operation>[ia]    	   : @parameter.inner
-7.   <operation>[af]   		   : @function.outer
-8.   <operation>[if		       : @function.inner
-9.   <operation>[aq]		   : @conditional.outer
-10.  <operation>[iq]   		   : @conditional.inner
-11.  <operation>[ar]   		   : @loop.outer
-12.  <operation>[ir]   		   : @loop.inner
-13.  <operation>[ac]   		   : @class.outer
-14.  <operation>[ic]   		   : @class.inner
+6.   <operation>[ia]    	     : @parameter.inner
+7.   <operation>[af]   		     : @function.outer
+8.   <operation>[if		         : @function.inner
+9.   <operation>[aq]		       : @conditional.outer
+10.  <operation>[iq]   		     : @conditional.inner
+11.  <operation>[ar]   		     : @loop.outer
+12.  <operation>[ir]   		     : @loop.inner
+13.  <operation>[ac]   		     : @class.outer
+14.  <operation>[ic]   		     : @class.inner
 15.  <leader>fd                : function.outer
 16.  <leader>fD                : class.outer
 17.  ]f                        : @function.outer forward search start
@@ -381,12 +381,12 @@
 
 ### Hop:
 ```viml
-1 .  <leader>hw			       : HopWord
-2 .  <leader>hp       		   : HopPattern
+1 .  <leader>hw			     : HopWord
+2 .  <leader>hp       	 : HopPattern
 3 .  <leader>hc				   : HopChar1
 4 .  <leader>hC				   : HopChar2
 5 .  <leader>hl				   : HopLine
-6 .  <leader>hdw		       : delete till the HopWord
+6 .  <leader>hdw		     : delete till the HopWord
 7 .  <leader>hdp			   : deltel till the HopPattern
 8 .  <leader>hdc			   : delte till the HopChar1
 9 .  <leader>hdC			   : delete till the HopChar2
