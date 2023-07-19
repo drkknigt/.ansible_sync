@@ -4,6 +4,7 @@
 ## FOLDER STRUCTURE
                   
 .config/nvim/  
+```
 ├── ayu_mirage.lua  
 ├── doc.txt  
 ├── init.lua  
@@ -88,7 +89,8 @@
 │       └── winbar  
 │           └── init.lua  
 └── snapshots  
-    └── snap_1  
+    └── snap_1
+```
     
 ---------------------------------------------------------------------------------------------------
 
