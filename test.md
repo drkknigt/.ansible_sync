@@ -381,8 +381,8 @@
 
 ### Hop:
 ```viml
-1 .  <leader>hw			     : HopWord
-2 .  <leader>hp       	        : HopPattern
+1 .  <leader>hw			           : HopWord
+2 .  <leader>hp       	             : HopPattern
 3 .  <leader>hc				   : HopChar1
 4 .  <leader>hC				   : HopChar2
 5 .  <leader>hl				   : HopLine
