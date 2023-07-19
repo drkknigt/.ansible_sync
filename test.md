@@ -3,93 +3,92 @@
 
 ## FOLDER STRUCTURE
                   
-/home/drkknght/.config/nvim/  
-asdfasdf 
-├── ayu_mirage.lua
-├── doc.txt
-├── init.lua
-├── lazy-lock.json
-├── lua
-│   ├── core
-│   │   ├── autocmds
-│   │   │   └── init.lua
-│   │   ├── color-config
-│   │   │   └── init.lua
-│   │   ├── keymaps
-│   │   │   └── init.lua
-│   │   ├── lazy-nvim
-│   │   │   └── init.lua
-│   │   ├── packer-config
-│   │   │   └── init.lua
-│   │   ├── settings
-│   │   │   └── init.lua
-│   │   ├── statusline
-│   │   │   ├── icons.lua
-│   │   │   └── init.lua
-│   │   └── userFunctions
-│   │       └── init.lua
-│   └── userPlugins
-│       ├── autopairs-config
-│       │   └── init.lua
-│       ├── cmp-config
-│       │   └── init.lua
-│       ├── colorizer-config
-│       │   └── init.lua
-│       ├── comment-config
-│       │   └── init.lua
-│       ├── fzflua
-│       │   └── init.lua
-│       ├── gitsigns-config
-│       │   └── init.lua
-│       ├── goto-config
-│       │   └── init.lua
-│       ├── harpoon
-│       │   └── init.lua
-│       ├── indentline-config
-│       │   └── init.lua
-│       ├── init.lua
-│       ├── iswaaap-config
-│       │   └── init.lua
-│       ├── jaq-config
-│       │   └── init.lua
-│       ├── lsp-config
-│       │   └── init.lua
-│       ├── lspkind-config
-│       │   └── init.lua
-│       ├── lspsaga-config
-│       │   └── init.lua
-│       ├── lualine-config
-│       │   ├── custom.lua
-│       │   └── init.lua
-│       ├── mkdir-config
-│       │   └── init.lua
-│       ├── null-config
-│       │   ├── builtins
-│       │   │   └── formatting
-│       │   │       └── jsbeautify.lua
-│       │   └── init.lua
-│       ├── nvimtree-config
-│       │   └── init.lua
-│       ├── signature
-│       │   └── init.lua
-│       ├── staline-config
-│       │   └── init.lua
-│       ├── symbolline-config
-│       │   └── init.lua
-│       ├── tabbar-config
-│       │   └── init.lua
-│       ├── _telescope-setting
-│       │   └── init.lua
-│       ├── terminal-config
-│       │   └── init.lua
-│       ├── treesitter
-│       │   └── init.lua
-│       ├── which-config
-│       │   └── init.lua
-│       └── winbar
-│           └── init.lua
-└── snapshots
-    └── snap_1
+/home/drkknght/.config/nvim/
+├── ayu_mirage.lua  
+├── doc.txt  
+├── init.lua  
+├── lazy-lock.json  
+├── lua  
+│   ├── core  
+│   │   ├── autocmds  
+│   │   │   └── init.lua  
+│   │   ├── color-config  
+│   │   │   └── init.lua  
+│   │   ├── keymaps  
+│   │   │   └── init.lua  
+│   │   ├── lazy-nvim  
+│   │   │   └── init.lua  
+│   │   ├── packer-config  
+│   │   │   └── init.lua  
+│   │   ├── settings  
+│   │   │   └── init.lua  
+│   │   ├── statusline  
+│   │   │   ├── icons.lua  
+│   │   │   └── init.lua  
+│   │   └── userFunctions  
+│   │       └── init.lua  
+│   └── userPlugins  
+│       ├── autopairs-config  
+│       │   └── init.lua  
+│       ├── cmp-config  
+│       │   └── init.lua  
+│       ├── colorizer-config  
+│       │   └── init.lua  
+│       ├── comment-config  
+│       │   └── init.lua  
+│       ├── fzflua  
+│       │   └── init.lua  
+│       ├── gitsigns-config  
+│       │   └── init.lua  
+│       ├── goto-config  
+│       │   └── init.lua  
+│       ├── harpoon  
+│       │   └── init.lua  
+│       ├── indentline-config  
+│       │   └── init.lua  
+│       ├── init.lua  
+│       ├── iswaaap-config  
+│       │   └── init.lua  
+│       ├── jaq-config  
+│       │   └── init.lua  
+│       ├── lsp-config  
+│       │   └── init.lua  
+│       ├── lspkind-config  
+│       │   └── init.lua  
+│       ├── lspsaga-config  
+│       │   └── init.lua  
+│       ├── lualine-config  
+│       │   ├── custom.lua  
+│       │   └── init.lua  
+│       ├── mkdir-config  
+│       │   └── init.lua  
+│       ├── null-config  
+│       │   ├── builtins  
+│       │   │   └── formatting  
+│       │   │       └── jsbeautify.lua  
+│       │   └── init.lua  
+│       ├── nvimtree-config  
+│       │   └── init.lua  
+│       ├── signature  
+│       │   └── init.lua  
+│       ├── staline-config  
+│       │   └── init.lua  
+│       ├── symbolline-config  
+│       │   └── init.lua  
+│       ├── tabbar-config  
+│       │   └── init.lua  
+│       ├── _telescope-setting  
+│       │   └── init.lua  
+│       ├── terminal-config  
+│       │   └── init.lua  
+│       ├── treesitter  
+│       │   └── init.lua  
+│       ├── which-config  
+│       │   └── init.lua  
+│       └── winbar  
+│           └── init.lua  
+└── snapshots  
+    └── snap_1  
     
 ---------------------------------------------------------------------------------------------------
 
@@ -101,10 +100,10 @@ asdfasdf
 
 ### vim-startuptime: 
     
-* \<leader\>pt             -> find the startup time
-* K                      -> Press `K` on events to get additional information.
-* gf                     -> Press `gf` on sourcing events to load the corresponding file
-* :Startuptime --tries N -> `--tries` specifies how many startup times are averaged.
+* leaderpt             : find the startup time
+* K                      : Press `K` on events to get additional information.
+* gf                     : Press `gf` on sourcing events to load the corresponding file
+* :Startuptime --tries N : `--tries` specifies how many startup times are averaged.
 
 ### better-escape: 
 
