@@ -1,9 +1,9 @@
 # NEOVIM PLUGIN USED AND KEYMAPS USER DEFINED  
 
-The action of every agent <br />
-  into the world
-starts <br />
-  from their physical selves.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 ## FOLDER STRUCTURE
                   
