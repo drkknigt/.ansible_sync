@@ -1,6 +1,6 @@
 # NEOVIM PLUGIN USED AND KEYMAPS USER DEFINED  
 
-The action of every agent
+The action of every agent <br />
   into the world
 starts <br />
   from their physical selves.
