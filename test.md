@@ -311,51 +311,53 @@
 ### nvim-treesitter:
 
 ```viml      
-1.   <c-space> 				         : init_selection 
-2.   <c-space> 				         : node_incremental 
-3.   <c-s> 				             : scope_incremental 
-4.   <c-backspace> 			       : node_decremental 
-5.   <operation>[aa]   	       : @parameter.outer
-6.   <operation>[ia]    	     : @parameter.inner
-7.   <operation>[af]   		     : @function.outer
-8.   <operation>[if		         : @function.inner
-9.   <operation>[aq]		       : @conditional.outer
-10.  <operation>[iq]   		     : @conditional.inner
-11.  <operation>[ar]   		     : @loop.outer
-12.  <operation>[ir]   		     : @loop.inner
-13.  <operation>[ac]   		     : @class.outer
-14.  <operation>[ic]   		     : @class.inner
-15.  <leader>fd                : function.outer
-16.  <leader>fD                : class.outer
-17.  ]f                        : @function.outer forward search start
-18.  ]c                        : k@class.outer forward search start
-19.  ]q                        : k@conditional.outer forward search start
-20.  ]r                        : k@loop.outer forward search start
-21.  ]s                        : k@statement.outer forward search start
-22.  [f                        : k@function.inner backward search start
-23.  [c                        : k@class.inner backward search start
-24.  [q                        : k@conditional.inner backward search start
-25.  [r                        : k@loop.inner backward search start
-26.  [s                        : k@statement.inner backward search start
-27.  <leader>nf                : @function.outer search end
-28.  <leader>nc                : @class.outer search end
-29.  <leader>nq                : @conditional.outer search end
-30.  <leader>nr                : @loop.outer search end
-31.  <leader>ns                : @statement.outer search end
-32.  <leader>mf                : @function.outer search end
-33.  <leader>mc                : @class.outer search end
-34.  <leader>mq                : @conditional.outer search end
-35.  <leader>mr                : @loop.outer search end
-36.  <leader>ms                : @statement.outer search end
-37.  <leader>lR                : smart_rename
-38.  gnd                       : goto_definition
-39.  gnD                       : list_definitions
-40.  gO                        : list_definitions_toc
-41.  <C-*>                     : goto_next_usage
-42.  <C-#>                     : goto_previous_usage
-43.  <leader>a                 : swap the args
-44.  <leader>hs                : move to start of text object
-45.  <leader>he                : move to end of text object
+1.   <c-space>       : init_selection 
+2.   <c-space>       : node_incremental 
+3.   <c-s>           : scope_incremental 
+4.   <c-backspace>   : node_decremental 
+5.   <operation>[aa] : @parameter.outer
+6.   <operation>[ia] : @parameter.inner
+7.   <operation>[af] : @function.outer
+8.   <operation>[if  : @function.inner
+9.   <operation>[aq] : @conditional.outer
+10.  <operation>[iq] : @conditional.inner
+11.  <operation>[ar] : @loop.outer
+12.  <operation>[ir] : @loop.inner
+13.  <operation>[ac] : @class.outer
+14.  <operation>[ic] : @class.inner
+15.  <leader>fd      : function.outer
+16.  <leader>fD      : class.outer
+17.  ]f              : @function.outer forward search start
+18.  ]c              : k@class.outer forward search start
+19.  ]q              : k@conditional.outer forward search start
+20.  ]r              : k@loop.outer forward search start
+21.  ]s              : k@statement.outer forward search start
+22.  [f              : k@function.inner backward search start
+23.  [c              : k@class.inner backward search start
+24.  [q              : k@conditional.inner backward search start
+25.  [r              : k@loop.inner backward search start
+26.  [s              : k@statement.inner backward search start
+27.  <leader>nf      : @function.outer search end
+28.  <leader>nc      : @class.outer search end
+29.  <leader>nq      : @conditional.outer search end
+30.  <leader>nr      : @loop.outer search end
+31.  <leader>ns      : @statement.outer search end
+32.  <leader>mf      : @function.outer search end
+33.  <leader>mc      : @class.outer search end
+34.  <leader>mq      : @conditional.outer search end
+35.  <leader>mr      : @loop.outer search end
+36.  <leader>ms      : @statement.outer search end
+37.  <leader>lR      : smart_rename
+38.  gnd             : goto_definition
+39.  gnD             : list_definitions
+40.  gO              : list_definitions_toc
+41.  <C-*>           : goto_next_usage
+42.  <C-#>           : goto_previous_usage
+43.  <leader>a       : swap the args
+44.  <leader>hs      : move to start of text object
+45.  <leader>he      : move to end of text object
+
+
 ```
 
 
