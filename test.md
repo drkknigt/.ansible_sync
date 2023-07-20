@@ -111,7 +111,7 @@
 
 ### nvim-tree:
 ```viml
-1. <leader>e  			       : open nvim file explorer
+1. <leader>e  		: open nvim file explorer
 2. g?      			           : show the mappings
 3. <C-]>   			           : change directory
 4. <C-e>   			           : OPen in place
