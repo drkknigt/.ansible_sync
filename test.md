@@ -111,27 +111,27 @@
 
 ### nvim-tree:
 ```viml
-1. <leader>e: open nvim file explorer
-2. g? : show the mappings
-3. <C-]> : change directory
-4. <C-e> : OPen in place
-5. <C-k> : info on the file
-6. <2-LeftMouse> : Open                  
-7. <2-RightMouse> : CD                    
-8. <C-]> : CD                    
-9. <C-E> : Open: In Place        
-10.  <C-K> : Info                  
-11.  <C-R> : Rename: Omit Filename 
-12.  <C-T> : Open: New Tab         
-13.  <C-V> : Open: Vertical Split  
-14.  <C-X> : Open: Horizontal Split
-15.  <BS> : Close Directory       
-16.  <CR> : Open                  
-17.  <Tab> : Open Preview          
-18.  - : Up                    
-19.  . : Run Command           
-20.  > : Next Sibling          
-21.  < : Previous Sibling      
+1.   <leader>e : open nvim file explorer
+2.   g?        : show the mappings
+3.   <C-]>     : change directory
+4.   <C-e>     : OPen in place
+5.   <C-k>     : info on the file
+6.   <2-LeftMouse> : Open                  
+7.   <2-RightMouse> : CD                    
+8.   <C-]>     : CD                    
+9.   <C-E>     : Open: In Place        
+10.  <C-K>     : Info                  
+11.  <C-R>     : Rename: Omit Filename 
+12.  <C-T>     : Open: New Tab         
+13.  <C-V>     : Open: Vertical Split  
+14.  <C-X>     : Open: Horizontal Split
+15.  <BS>      : Close Directory       
+16.  <CR>      : Open                  
+17.  <Tab>     : Open Preview          
+18.  -         : Up                    
+19.  .         : Run Command           
+20.  >         : Next Sibling          
+21.  <         : Previous Sibling      
 22.  B : Toggle No Buffer      
 23.  C : Toggle Git Clean      
 24.  D : Trash                 
