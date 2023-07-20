@@ -132,47 +132,47 @@
 19.  .         : Run Command           
 20.  >         : Next Sibling          
 21.  <         : Previous Sibling      
-22.  B : Toggle No Buffer      
-23.  C : Toggle Git Clean      
-24.  D : Trash                 
-25.  E : Expand All            
-26.  F : Clean Filter          
-27.  H : Toggle Dotfiles       
-28.  I : Toggle Git Ignore     
-29.  J : Last Sibling          
-30.  K : First Sibling         
-31.  O : Open: No Window Picker
-32.  P : Parent Directory      
-33.  R : Refresh               
-34.  S : Search                
-35.  U : Toggle Hidden         
-36.  W : Collapse              
-37.  Y : Copy Relative Path    
-38.  a : Create                
-39.  bmv : Move Bookmarked       
-40.  c : Copy                  
-41.  ]c : Next Git              
-42.  [c : Prev Git              
-43.  d : Delete                
-44.  ]e : Next Diagnostic       
-45.  e : CD                    
-46.  [e : Prev Diagnostic       
-47.  f : Filter                
-48.  g? : Help                  
-49.  gy : Copy Absolute Path    
-50.  h : Close Directory       
-51.  l : Open                  
-52.  m : Toggle Bookmark       
-53.  o : Open                  
-54.  p : Paste                 
-55.  q : Close                 
-56.  r : Rename                
-57.  s : Run System            
-58.  u : Up                    
-59.  v : Open: Vertical Split  
-60.  x : Cut                   
-61.  y : Copy Name             
-62.  z : Open: Horizontal Split
+22.  B         : Toggle No Buffer      
+23.  C         : Toggle Git Clean      
+24.  D         : Trash                 
+25.  E         : Expand All            
+26.  F         : Clean Filter          
+27.  H         : Toggle Dotfiles       
+28.  I         : Toggle Git Ignore     
+29.  J         : Last Sibling          
+30.  K         : First Sibling         
+31.  O         : Open: No Window Picker
+32.  P         : Parent Directory      
+33.  R         : Refresh               
+34.  S         : Search                
+35.  U         : Toggle Hidden         
+36.  W         : Collapse              
+37.  Y         : Copy Relative Path    
+38.  a         : Create                
+39.  bmv       : Move Bookmarked       
+40.  c         : Copy                  
+41.  ]c        : Next Git              
+42.  [c        : Prev Git              
+43.  d         : Delete                
+44.  ]e        : Next Diagnostic       
+45.  e         : CD                    
+46.  [e        : Prev Diagnostic       
+47.  f         : Filter                
+48.  g?        : Help                  
+49.  gy        : Copy Absolute Path    
+50.  h         : Close Directory       
+51.  l         : Open                  
+52.  m         : Toggle Bookmark       
+53.  o         : Open                  
+54.  p         : Paste                 
+55.  q         : Close                 
+56.  r         : Rename                
+57.  s         : Run System            
+58.  u         : Up                    
+59.  v         : Open: Vertical Split  
+60.  x         : Cut                   
+61.  y         : Copy Name             
+62.  z         : Open: Horizontal Split
 
 ```
 
