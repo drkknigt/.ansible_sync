@@ -366,7 +366,7 @@
 3 .  <leader>hc				   : HopChar1
 4 .  <leader>hC				   : HopChar2
 5 .  <leader>hl				   : HopLine
-6 .  <leader>hdw		          : delete till the HopWord
+6 .  <leader>hdw		           : delete till the HopWord
 7 .  <leader>hdp			   : deltel till the HopPattern
 8 .  <leader>hdc			   : delte till the HopChar1
 9 .  <leader>hdC			   : delete till the HopChar2
