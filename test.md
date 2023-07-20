@@ -206,43 +206,44 @@
 ### Telescope:
 ```viml
 1. n = {
-2. <c-o> 		               : action_layout.toggle_preview,
-3. <c-e> 		               : actions.close,
-4. <Tab> 		               : actions.toggle_selection + actions.move_selection_next,
-5. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
+2. <c-o>         : action_layout.toggle_preview,
+3. <c-e>         : actions.close,
+4. <Tab>         : actions.toggle_selection + actions.move_selection_next,
+5. <S-Tab>       : actions.toggle_selection + actions.move_selection_previous,
 6. i = {
-7. <Tab> 		               : actions.toggle_selection,
-8. <S-Tab> 	               : actions.toggle_selection + actions.move_selection_previous,
-9. <c-o> 		               : action_layout.toggle_preview,
-10. <c-e> 		             : actions.close,
-11. <c-j> 		             : actions.move_selection_next,
-12. <c-k> 		             : actions.move_selection_previous,
-13. <C-q> 		             : actions.smart_send_to_qflist,
-14. <C-i> 	               : actions.smart_send_to_qflist,
-15. <C-f> 		             : actions.smart_send_to_qflist + actions.open_qflist,
-16. <C-c>                  : close telescope
-17. <C-/>                  : show/toggle keymaps for particular telescope window in insert mode
-18. ?                      : show/toggle keymaps for particular telescope window in normal mode
-19. <leader>go             : Telescope git status
-20. <leader>gb             : Telescope git branches
-21. <leader>gc             : Telescope git commits
-22. <leader>sd             : file browser home directory
-23. <leader>sm             : show manual pages in telescope
-24. <leader>so             : show old files in telescope
-25. <leader>sf             : fild files in telescope
-26. <leader>sR             : show registers in telescope
-27. <leader>sr             : resume telescope to last place
-28. <leader>sk             : show all keympas in telescope
-29. <leader>sc             : show all commands in telescope
-30. <leader>sp             : show all projects in telescope
-31. <leader>sq             : show quickfix in telescope
-32. <leader>si             : show internet bookmarks in telescope
-33. <leader>sb             : show buffers in telescope
-34. <leader>se             : file browser current
-35. <leader>ss             : live grep
-36. <leader>sE             : env vairables in telescope
-37. <leader>sl             : fuzzy find buffer content in telescope
-38. <leader>sh             : search dotfiles in telescope
+7. <Tab>         : actions.toggle_selection,
+8. <S-Tab>       : actions.toggle_selection + actions.move_selection_previous,
+9. <c-o>         : action_layout.toggle_preview,
+10. <c-e>        : actions.close,
+11. <c-j>        : actions.move_selection_next,
+12. <c-k>        : actions.move_selection_previous,
+13. <C-q>        : actions.smart_send_to_qflist,
+14. <C-i>        : actions.smart_send_to_qflist,
+15. <C-f>        : actions.smart_send_to_qflist + actions.open_qflist,
+16. <C-c>        : close telescope
+17. <C-/>        : show/toggle keymaps for particular telescope window in insert mode
+18. ?            : show/toggle keymaps for particular telescope window in normal mode
+19. <leader>go   : Telescope git status
+20. <leader>gb   : Telescope git branches
+21. <leader>gc   : Telescope git commits
+22. <leader>sd   : file browser home directory
+23. <leader>sm   : show manual pages in telescope
+24. <leader>so   : show old files in telescope
+25. <leader>sf   : fild files in telescope
+26. <leader>sR   : show registers in telescope
+27. <leader>sr   : resume telescope to last place
+28. <leader>sk   : show all keympas in telescope
+29. <leader>sc   : show all commands in telescope
+30. <leader>sp   : show all projects in telescope
+31. <leader>sq   : show quickfix in telescope
+32. <leader>si   : show internet bookmarks in telescope
+33. <leader>sb   : show buffers in telescope
+34. <leader>se   : file browser current
+35. <leader>ss   : live grep
+36. <leader>sE   : env vairables in telescope
+37. <leader>sl   : fuzzy find buffer content in telescope
+38. <leader>sh   : search dotfiles in telescope
+
 ```
 
 ### Fzf-lua:
