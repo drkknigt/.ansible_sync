@@ -108,9 +108,6 @@
 4. :Startuptime --tries N        : `--tries` specifies how many startup times are averaged.
 ```
 
-### better-escape: 
-
---
 
 ### nvim-tree:
 ```viml
