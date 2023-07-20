@@ -204,13 +204,6 @@
 8. <C-f>                  : confirm or select the current selection completion option
 ```
         
-### nvim-dap:
-
----
-
-### DAPInsall.nvim:
-
----
 
 ### Telescope:
 ```viml
@@ -306,10 +299,6 @@
 ```
 
 
-### fidget:
-
----
-
 ### nvim-surround:
 ```viml
 
@@ -320,13 +309,7 @@
 5.  dss                       : delete surround
 ```
 
-### nvim-dev-icons:
 
----
-
-### vim-dev-icons:
-
----
        
 ### nvim-treesitter:
 
@@ -403,9 +386,6 @@
 20.  <leader>hyl			   : copy till the HopLine
 ```
 
-### Lualine:
-
----
 
 
 ### vim-matchup: 
@@ -413,14 +393,7 @@
 1. %                                     : match parenthesis and other objects
 ```
 
-### buffer-line: 
 
----
-    
-### which-key:
-
-
----
 
 ## toggleterm:
 
@@ -452,9 +425,6 @@
         
 
 
-### popup:
-
----
 
 
 ### mason:
@@ -476,10 +446,6 @@
 ```
         
 
-### lsp-kind:
-
----
-
 
 ### symbol-outline:
 
@@ -499,9 +465,7 @@
 13. R                                   : fold_reset
 ```
 
-### indent-blankline:
 
----
 
 ### null-config:
 
@@ -535,9 +499,7 @@
 ```
 
 
-### nvim-bqf:
 
----
 
 ### codewindow-nvim:
 
