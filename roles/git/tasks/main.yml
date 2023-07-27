@@ -9,7 +9,7 @@
   git_config:
     name: user.name
     scope: global
-    value: "{{ user }}"
+    value: drkknght
   
 - name: name the master branch to main
   git_config:
