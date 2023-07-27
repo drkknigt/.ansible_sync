@@ -1,0 +1,9 @@
+---
+- name: install vim
+  import_tasks: vim.yml
+  tags: vim
+  
+
+- name: install neovim
+  import_tasks: neovim.yml
+  tags: neovim

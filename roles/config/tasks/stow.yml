@@ -1,0 +1,11 @@
+---
+- name: install stow
+  apt:
+    name: stow
+    update_cache: no
+  become: yes
+  ignore_errors: yes
+    
+- name: stow dotfiles
+  shell: |
+    cd ~/.dotfiles && stow */

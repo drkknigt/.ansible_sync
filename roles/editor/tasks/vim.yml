@@ -1,0 +1,23 @@
+---
+- name: install keys for vim
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: 4AB0F789CBA31744CC7DA76A8CF63AD3F06FC659
+  become: yes
+  ignore_errors: yes
+    
+- name: install vim ppa 
+  become: True
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/jonathonf/vim/ubuntu jammy main
+     state: present
+     update_cache: True
+  ignore_errors: yes
+
+- name: install vim and xclip
+  become: True
+  apt:
+    name: ["vim-nox","vim-gtk3","xclip"]
+    update_cache: yes
+  ignore_errors: yes
+

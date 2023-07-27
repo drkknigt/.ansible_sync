@@ -1,0 +1,20 @@
+---
+- name: install node lts
+  become: yes
+  apt:
+     name: ["nodejs","npm"]
+     update_cache: yes
+  ignore_errors: yes
+     
+- name: install n
+  become: yes
+  community.general.npm:
+      name: n
+      global: yes
+  tags: n
+
+- name: install latest lts
+  become: yes
+  shell: |
+     n lts
+  tags: lts_node

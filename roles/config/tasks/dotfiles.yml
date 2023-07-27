@@ -1,0 +1,5 @@
+---
+- name: clone dotfiles
+  git:
+    repo: https://github.com/drkknigt/.dotfiles.git
+    dest: $HOME/.dotfiles

@@ -1,0 +1,29 @@
+---
+- name: install lua dependencies
+  become: yes
+  apt:
+    name: ["libreadline-dev","unzip","lua5.3","liblua5.3-dev","luarocks"]
+    update_cache: True
+  ignore_errors: yes
+
+- name: install luacheck
+  become: yes
+  shell: |
+    luarocks install luacheck 
+    luarocks install jsregexp
+  tags: luacheck
+
+- name: clone stylua
+  unarchive:
+    src: https://github.com/JohnnyMorganz/StyLua/releases/download/v0.13.1/stylua-linux.zip
+    dest: $HOME/.local/bin/
+    remote_src: yes
+  tags: stylua
+
+- name: change permission
+  file:
+    path: $HOME/.local/bin/stylua
+    owner: drkknght
+    group: drkknght
+    mode: '0755'
+  tags: stylua

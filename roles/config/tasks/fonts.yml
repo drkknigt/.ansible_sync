@@ -1,0 +1,12 @@
+---
+- name: make dir fonts
+  file:
+    path: $HOME/.local/share/fonts
+    state: directory
+
+- name: install fonts
+  unarchive:
+    src: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/CascadiaCode.zip
+    dest: $HOME/.local/share/fonts
+    remote_src: yes
+

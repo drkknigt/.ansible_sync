@@ -1,0 +1,28 @@
+---
+- name: install misc software
+  import_tasks: utilities.yml
+  tags: utility
+
+- name: install lazygit
+  import_tasks: lazygit.yml
+  tags: lazygit
+
+- name: install fast file searching and text search tools
+  import_tasks: search.yml
+  tags: search
+
+- name: install zathura
+  import_tasks: zathura.yml
+  tags: zathura
+
+- name: install brave browser
+  import_tasks: brave.yml
+  tags: brave
+
+- name: install zettler reader
+  import_tasks: zettler.yml
+  tags: zettler
+
+- name: install protonvpn
+  import_tasks: vpn.yml
+  tags: vpn

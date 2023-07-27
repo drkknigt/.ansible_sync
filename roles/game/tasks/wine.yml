@@ -1,0 +1,42 @@
+---
+- name: add 32 bit architecture
+  command: dpkg --add-architecture i386
+  become: yes
+    
+- name: make directory for keyrings
+  file:
+    path: /etc/apt/keyrings
+    state: directory
+    mode: '755'
+  become: yes
+
+- name: add repo for wine latest
+  get_url:
+    url: https://dl.winehq.org/wine-builds/winehq.key
+    dest: /etc/apt/keyrings/winehq-archive.key
+  become: yes
+                  
+- name: add wine for jammy
+  shell: | 
+    wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources &> /dev/null
+  become: yes
+    
+- name:  install libraries and wine
+  become: yes
+  apt:
+    name: [ "wine64", "wine32", "libasound2-plugins:i386", "libsdl2-2.0-0:i386", "libdbus-1-3:i386", "libsqlite3-0:i386"]
+    update_cache: True
+      
+- name: update the system
+  apt: 
+    update_cache: yes
+  become: yes
+    
+      
+- name: install wine staging and lutris
+  become: yes
+  apt:
+    name: ["winehq-staging", "lutris"]
+    install_recommends: yes
+    update_cache: True
+      

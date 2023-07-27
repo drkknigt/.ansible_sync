@@ -1,0 +1,15 @@
+---
+- name: get latest ProtonVPN version name
+  shell: curl -s https://repo.protonvpn.com/debian/dists/stable/main/binary-all/ | grep -o 'protonvpn-stable-release_[0-9.]*_all\.deb' | sort -V | tail -n 1
+  register: latest_version_url
+
+- name: Download the latest version package
+  apt:
+    deb: "https://repo.protonvpn.com/debian/dists/stable/main/binary-all/{{ latest_version_url.stdout }}"
+  become: yes
+
+- name: install protonvpn on system
+  apt: 
+    name: protonvpn-cli
+    update_cache: yes
+  become: yes

@@ -1,0 +1,9 @@
+---
+- name: install wine and lutris
+  import_tasks: wine.yml
+  tags: wine
+
+- name: install xanmod kernel
+  import_tasks: kernel.yml
+  tags: kernel
+

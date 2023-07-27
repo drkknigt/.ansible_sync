@@ -1,0 +1,27 @@
+---
+- name: install python3
+  become: yes
+  apt:
+    name: ["python3.10","python3-pip","python3.10-venv","make","build-essential","libssl-dev","zlib1g-dev","libbz2-dev","libreadline-dev","libsqlite3-dev","wget","curl","llvm","libncurses5-dev","libncursesw5","xz-utils","tk-dev","libffi-dev","liblzma-dev","python3-openssl","git"]
+    update_cache: True
+  ignore_errors: yes
+
+- name: install python libraries
+  pip:
+    name: ["black","flake8","mypy","autopep8","pylint","playsound","pytube","pyowm","pyftpdlib","pytest"]
+  tags: pip_main_libraries
+
+- name: install poetry 
+  shell: |
+    curl -sSL https://install.python-poetry.org | python3 -
+  tags: poetry
+
+- name: install pyenv 
+  shell: |
+    curl https://pyenv.run | bash
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+    echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+    echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+  tags: pyenv
+  
+  

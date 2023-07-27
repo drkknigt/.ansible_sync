@@ -1,0 +1,21 @@
+---
+- name: clone dotfiles
+  import_tasks: dotfiles.yml
+  tags: dotfiles
+    
+- name: clone wallpapers
+  import_tasks: wallpapers.yml
+  tags: wallpapers
+
+- name: tinker configs and delete unnecessary directories
+  import_tasks: config.yml
+  tags: change_config
+    
+     
+- name: install stow
+  import_tasks: stow.yml
+  tags: stow
+    
+- name: download fonts
+  import_tasks: fonts.yml
+  tags: fonts

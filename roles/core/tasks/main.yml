@@ -1,0 +1,37 @@
+---
+- name: install tmux
+  import_tasks: tmux.yml
+  tags: tmux
+  
+
+- name: install fzf
+  import_tasks: fzf.yml
+  tags: fzf
+
+- name: install picom
+  import_tasks: picom.yml
+  tags: picom
+
+- name: install i3
+  import_tasks: i3.yml
+  tags: i3
+
+- name: install polybor
+  import_tasks: polybar.yml
+  tags: polybar
+
+- name: install zsh-shell
+  import_tasks: zsh.yml
+  tags: zsh
+
+- name: install oh-my-zsh
+  import_tasks: oh_my_zsh.yml
+  tags: oh_my_zsh
+
+- name: install powerlevel10k theme
+  import_tasks: powerlevel10k.yml
+  tags: shelltheme
+
+- name: install git suggestions
+  import_tasks: git_suggestions.yml
+  tags: git_suggestions

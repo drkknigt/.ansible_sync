@@ -1,0 +1,16 @@
+---
+- name: Register the pgp keys
+  shell: | 
+    wget -qO - https://dl.xanmod.org/archive.key | sudo gpg --dearmor -o /usr/share/keyrings/xanmod-archive-keyring.gpg
+  become: yes
+    
+- name: Add the repository
+  shell: |
+    echo 'deb [signed-by=/usr/share/keyrings/xanmod-archive-keyring.gpg] http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.d/xanmod-release.list
+  become: yes
+
+- name: install kernel
+  apt:
+    name: ["linux-xanmod-x64v3"]
+    update_cache: true
+  become: true

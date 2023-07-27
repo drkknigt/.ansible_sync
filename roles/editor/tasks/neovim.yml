@@ -1,0 +1,32 @@
+- name : install neovim dependencies
+  apt:
+    name: ['ninja-build', 'gettext', 'libtool' ,'libtool-bin', 'autoconf', 'automake', 'cmake', 'g++' ,'pkg-config' ,'unzip','curl', 'doxygen']
+    update_cache: yes
+  become: yes
+  ignore_errors: yes
+
+- name: clone neovim
+  git:
+    repo: https://github.com/neovim/neovim
+    dest: $HOME/neovim
+
+- name: build neovim
+  make:
+    chdir: /home/drkknght/neovim
+    target: install
+    params:
+      CMAKE_BUILD_TYPE: Release
+      CMAKE_INSTALL_PREFIX: /usr/local
+  become: yes
+  
+- name: make undodir for nvim
+  file:
+    path: $HOME/.textedit/nvim/undodir
+    state: directory
+  tags: editor_path
+
+- name: make undodir for vim
+  file:
+    path: $HOME/.textedit/vim/undodir
+    state: directory
+  tags: editor_path

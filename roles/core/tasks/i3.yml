@@ -1,0 +1,44 @@
+---
+- name: install i3 
+  apt:
+    name: apt
+    update_cache: True
+  become: yes
+  ignore_errors: yes
+
+- name: install keys
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: EFC31B0AE9F1000B38E37FC8C0930F305A0E0FEF
+  become: yes
+  ignore_errors: yes
+
+- name: install i3gaps repo
+  apt_repository:
+     repo: deb https://ppa.launchpadcontent.net/regolith-linux/stable/ubuntu groovy main 
+     state: present
+     update_cache: True
+  become: yes
+  ignore_errors: yes
+
+- name: install i3gaps
+  apt:
+    name: i3-gaps
+  become: yes
+  ignore_errors: yes
+
+- name: install autotiling
+  git:
+    repo: https://www.github.com/nwg-piotr/autotiling
+    dest: $HOME/autotiling
+  tags: autotiling
+
+- name: move make.py to bin
+  copy:
+    src: ~/autotiling/autotiling/main.py
+    dest: $HOME/.local/bin/autotiling
+    mode: 0750
+  tags: autotiling
+  
+  
+

@@ -1,0 +1,13 @@
+---
+- name: remove directories
+  shell: |
+     rm -rf /home/drkknght/tmux /home/drkknght/polybar /home/drkknght/picom /home/drkknght/.bashrc /home/drkknght/.zshrc /home/drkknght/.tmux.conf /home/drkknght/.profile
+  become: yes
+
+    
+- name: change permissions and modify polybar config
+  shell: |
+     chmod +x ~/bin -R
+     chmod +x ~/.fehbg
+     a=$(ls /sys/class/backlight/)
+     sed -Ei "s/card =.*/card = $a/g" /home/drkknght/.dotfiles/polybar/.config/polybar/config

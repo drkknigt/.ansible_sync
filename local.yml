@@ -6,184 +6,63 @@
       become: true
       apt:
          update_cache: yes
+         upgrade: yes
          state: present
       ignore_errors: yes
-         
-  tasks:
-    - name: install git
-      include_tasks: 
-         file: tasks/git.yml
-         apply:
-           tags: git
-      tags: git
-
-    - name: install alacritty
-      include_tasks: 
-         file: tasks/alacritty.yml
-         apply:
-           tags: alacritty
-      tags: alacritty
-
-    - name: install kitty
-      include_tasks: 
-         file: tasks/kitty.yml
-         apply:
-           tags: kitty
-      tags: kitty
-
-    - name: install vim
-      include_tasks: 
-         file: tasks/vim.yml
-         apply:
-           tags: vim
-      tags: vim
-
-    - name: install neovim
-      include_tasks: 
-         file: tasks/neovim.yml
-         apply:
-           tags: neovim
-      tags: neovim
-
-    - name: install node and nvm
-      include_tasks:
-        file: tasks/node.yml
-        apply:
-          tags: node
-      tags: node
-
-    - name: install python
-      include_tasks:
-        file: tasks/python.yml
-        apply:
-          tags: python
-      tags: python
-
-    - name: install clangd and essentials
-      include_tasks:
-        file: tasks/clangd.yml
-        apply:
-          tags: clangd
-      tags: clangd
-
-    - name: install tmux libraries
-      include_tasks:
-        file: tasks/tmux.yml
-        apply:
-          tags: tmux
-      tags: tmux
-
-    - name: install fzf
-      include_tasks:
-        file: tasks/fzf.yml
-        apply:
-          tags: fzf
-      tags: fzf
-
-    - name: install misc soft
-      include_tasks:
-        file: tasks/misc.yml
-        apply:
-          tags: misc
-      tags: misc
-
-    - name: install picom
-      include_tasks:
-        file: tasks/picom.yml
-        apply:
-          tags: picom
-      tags: picom
-
-    - name: install lua and luarocks
-      include_tasks: 
-         file: tasks/lua.yml
-         apply:
-           tags: lua
-      tags: lua
         
-    - name: install rust and cargo
-      include_tasks:
-        file: tasks/rust.yml
-        apply:
-          tags: rust
-      tags: rust
+- hosts: localhost
+  name: starting git roles
+  roles:
+    - git
+  tags: git
 
-    - name: install i3
-      include_tasks:
-        file: tasks/i3.yml
-        apply:
-          tags: i3
-      tags: i3
+- hosts: localhost
+  name: starting terminal roles
+  roles:
+    - terminals
+  tags: terminals
+    
+- hosts: localhost
+  name: starting editor roles
+  roles:
+    - editor
+  tags: editor
 
-    - name: install polybar
-      include_tasks:
-        file: tasks/polybar.yml
-        apply:
-          tags: polybar
-      tags: polybar
+    
+- hosts: localhost
+  name: starting languages roles
+  roles:
+    - languages
+  tags: languages
+    
+    
+- hosts: localhost
+  name: starting core roles
+  roles:
+    - core
+  tags: core
+    
+- hosts: localhost
+  name: starting addons roles
+  roles:
+    - addons
+  tags: addons
 
-
-    - name: brave browser and zettler
-      include_tasks:
-        file: tasks/brave.yml
-        apply:
-          tags: brave
-      tags: brave
-
-    - name: zsh shell
-      include_tasks:
-        file: tasks/zsh.yml
-        apply:
-          tags: zsh
-      tags: zsh
-      
-    - name: sync dotfiles
-      include_tasks:
-        file: tasks/dotfiles.yml
-        apply:
-          tags: dot
-      tags: dot
-
-    - name: Install Docker
-      include_tasks:
-        file: tasks/docker.yml
-        apply:
-          tags: docker
-      tags: docker
-
-    - name: install fonts
-      include_tasks:
-        file: tasks/fonts.yml
-        apply:
-          tags: fonts
-      tags: fonts
-        
-    - name: install xanmod kernel
-      include_tasks:
-        file: tasks/kernel.yml
-        apply:
-          tags: kernel
-      tags: kernel
-
-#   - name: cpu auto freq
-#     include_tasks:
-#       file: tasks/auto.yml
-#       apply:
-#         tags: auto
-#     tags: auto   
-      
-
-    - name: install wine and lutris for gaming
-      include_tasks:
-        file: tasks/game.yml
-        apply:
-          tags: game
-      tags: game
-
-
-    - name: install go language
-      include_tasks:
-        file: tasks/go.yml
-        apply:
-          tags: go
-      tags: go
+- hosts: localhost
+  name: starting dotfile roles
+  roles:
+    - config
+  tags: config
+    
+- hosts: localhost
+  name: start gaming roles
+  roles:
+    - game
+  tags: game
+    
+- hosts: localhost
+  name: start docker roles
+  roles:
+    - docker
+  tags: docker
+    
