@@ -7,3 +7,7 @@
 - name: install neovim
   import_tasks: neovim.yml
   tags: neovim
+
+- name: install vscode
+  import_tasks: vscode.yml
+  tags: vscode
