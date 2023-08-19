@@ -1,2 +1,5 @@
 - name: install lazygit
-  shell: go install github.com/jesseduffield/lazygit@latest
+  shell: |
+    PATH=/usr/local/go/bin:$PATH
+    go install github.com/jesseduffield/lazygit@latest
+    
