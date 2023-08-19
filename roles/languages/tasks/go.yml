@@ -1,4 +1,10 @@
 ---
+- name: dependencies to build
+  apt:
+    name: 'build-essential'
+    update_cache: yes
+  become: yes
+
 - name: rm previous versions of Go
   file:
     path: /usr/local/go

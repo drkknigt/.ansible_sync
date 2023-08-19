@@ -5,6 +5,7 @@
     - name: update and upgrade the system
       become: true
       apt:
+        name: ['build-essential']
          update_cache: yes
          upgrade: yes
          state: present
