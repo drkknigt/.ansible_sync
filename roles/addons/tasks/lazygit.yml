@@ -1,2 +1,2 @@
 - name: install lazygit
-  command: go install github.com/jesseduffield/lazygit@latest
+  shell: go install github.com/jesseduffield/lazygit@latest
