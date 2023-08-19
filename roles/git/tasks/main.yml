@@ -17,3 +17,46 @@
     scope: global
     value: "{{ git_branch }}"
 
+- name: set core editor
+  git_config:
+    name: core.editor
+    scope: global
+    value: "nvim"
+
+- name: set core pager
+  git_config:
+    name: core.pager
+    scope: global
+    value: "delta"
+      
+- name: set interactive options
+  git_config:
+    name: interactive.diffFilter
+    scope: global
+    value: "delta --color-only"
+
+- name: set delta options
+  git_config:
+    name: delta.navigate
+    scope: global
+    value: "true"
+      
+      
+- name: set delta options
+  git_config:
+    name: delta.light
+    scope: global
+    value: "true"
+      
+- name: set merge options
+  git_config:
+    name: merge.conflictstyle
+    scope: global
+    value: "diff3"
+      
+- name: set diff options
+  git_config:
+    name: diff.colorMoved
+    scope: global
+    value: "default"
+      

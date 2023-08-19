@@ -39,3 +39,25 @@
   become: yes
   ignore_errors: yes
   tags: pdf-tools
+    
+- name: make user bin directory
+  file:
+    path: $HOME/usr/bin
+    state: directory
+  tags: delta
+
+- name: extract tar.gz 
+  unarchive:
+    src: https://github.com/dandavison/delta/releases/download/0.15.0/delta-0.15.0-x86_64-unknown-linux-gnu.tar.gz
+    dest: /tmp
+    remote_src: yes
+  tags: delta
+
+- name: copy delta from tmp
+  copy:
+    src: /tmp/delta-0.15.0-x86_64-unknown-linux-gnu/delta
+    dest: $HOME/usr/bin
+    owner: drkknght
+    group: drkknght
+    mode: '0711'
+  tags: delta
