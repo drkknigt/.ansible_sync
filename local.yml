@@ -4,6 +4,7 @@
   pre_tasks:
     - name: update and upgrade the system
       become: true
+      apt:
          update_cache: yes
          upgrade: yes
          state: present
