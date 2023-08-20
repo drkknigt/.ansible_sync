@@ -26,3 +26,7 @@
 - name: install protonvpn
   import_tasks: vpn.yml
   tags: vpn
+
+- name: install lf
+  import_tasks: lf.yml
+  tags: lf

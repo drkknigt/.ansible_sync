@@ -1,0 +1,5 @@
+- name: install lf file manager
+  hosts: localhost
+  tasks:
+    - name: some stuff
+      shell: env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
