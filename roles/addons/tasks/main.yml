@@ -30,3 +30,8 @@
 - name: install lf
   import_tasks: lf.yml
   tags: lf
+    
+
+- name: install nnn
+  import_tasks: nnn.yml
+  tags: nnn

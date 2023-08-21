@@ -19,3 +19,10 @@
 - name: download fonts
   import_tasks: fonts.yml
   tags: fonts
+
+- name: copy lfrun 
+  shell: |
+    cp $HOME/.dotfiles/lf/.config/lf/lfrun $HOME/usr/bin/
+    chmod +x $HOME/.dotfiles/lf/.config/lf/preview
+    chmod +x $HOME/.dotfiles/lf/.config/lf/cleaner
+    chmod +x $HOME/usr/bin/lfrun
