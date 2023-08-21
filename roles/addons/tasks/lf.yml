@@ -1,5 +1,8 @@
 - name: install lf file manager
-  shell: env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
+  shell: |
+    PATH=/usr/local/go/bin:$PATH
+    PATH=/usr/bin:$PATH
+    env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
     
 - name: install ueberzug
   become: yes
