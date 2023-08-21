@@ -1,6 +1,6 @@
 # Ansible Playbook with Roles Readme
 
-This repository contains an Ansible playbook with roles that can be used to configure and set up various components on a local system. The playbook is designed to be run on the `local` machine and covers a range of tasks including system updates, Git configuration, terminal setup, editor installation, language configurations, core utilities, addon installations, dotfile management, gaming setup, and Docker configuration. Each task is modularized into separate roles to ensure easy maintenance and reusability.  
+This repository contains an Ansible playbook with roles that i use to configure and set up various components on my local system. The playbook is designed to be run on the `local` machine and covers a range of tasks including system updates, Git configuration, terminal setup, editor installation, language configurations, core utilities, addon installations, dotfile management, gaming setup, and Docker configuration. Each task is modularized into separate roles to ensure easy maintenance and reusability.  
 
 This repository contains a bootstrap.sh file that serves as an automated system bootstrapper.  
 When executed, this script will automatically set up and install all the necessary components required for Ansible to run smoothly. It streamlines the process of installing all the Ansible-related dependencies, making it effortless to get started with the playbook and roles provided in the repository.
@@ -41,38 +41,79 @@ The playbook is structured into multiple plays, each corresponding to a specific
 ### 1. Install System (Pre-Tasks)
 
 - Set up the pre-tasks that are required by the configuration to run successfully
+- I basically update and upgrade the system in my pre tasks 
 
 ### 2. Git Role
 
 - Set up git configuration for personal use
+    - name
+    - email
+    - main branch
+    - git  editor
+    - git pager
 
 ### 3. Terminals Role
 
-- Install terminals like alacritty , kitty 
+- Install terminals 
+    - alacrityy
+    - kitty
 
 ### 4. Editor Role
 
-- Install PDE's like neovim , vim and IDE's like vscode
+- Install PDE's & IDE's
+    - vim
+    - neovim
+    - vscode
 
 ### 5. Languages Role
 
 - Install various run times and programming languages used for developing
+    - Rust
+    - Go
+    - Clangd
+    - Node
+    - Python
 
 ### 6. Core Role
 
 - Install core system software for the linux like window manager,compositor, shell etc
+    - tmux
+    - i3wm
+    - fzf
+    - picom
+    - polybar
+    - zsh-shell
+    - shell plugins main
 
 ### 7. Addons Role
 
 - Insall addon software required for additional tasks 
+    - lazygit
+    - zathura
+    - brave-browser
+    - zettler
+    - protonvpn
+    - lf
+    - nnn
+    - terminal search tools
+    - additional utilities
 
 ### 8. Config Role
 
 - Set up personal dotfiles and configuration for various applications
+    - set up dotfiles
+    - set up wallpaper
+    - stow dotfiles
+    - set up configs 
+    - download fonts
+    - set up lf
 
 ### 9. Game Role
 
 - Set up gaming kernel and wine and lutris etc for gaming
+    - set up wine
+    - set up lutris
+    - set up kernel
 
 ### 10. Docker Role
 
@@ -82,15 +123,67 @@ The playbook is structured into multiple plays, each corresponding to a specific
 
 Each play in the playbook is associated with a specific tag to allow selective execution of roles. You can use the tags to run only the plays that are relevant to your requirements. Here are the available tags:
 
-- `git`: Run the Git role.
-- `terminals`: Run the Terminals role.
-- `editor`: Run the Editor role.
-- `languages`: Run the Languages role.
-- `core`: Run the Core role.
-- `addons`: Run the Addons role.
-- `config`: Run the Config role.
-- `game`: Run the Game role.
-- `docker`: Run the Docker role.
+- `addons` 
+- `alacritty` 
+- ` brave` 
+- `change_config` 
+- `clangd` 
+- ` config` 
+- `core` 
+- ` delta` 
+- `docker` 
+- ` dotfiles` 
+- `editor` 
+- ` editor_path` 
+- ` fd-find` 
+- ` fonts` 
+- ` fzf` 
+- `game` 
+- `git` 
+- ` git_suggestions` 
+- ` go` 
+- ` i3` 
+- ` kernel` 
+- ` kitty` 
+- ` languages` 
+- ` lazygit` 
+- ` lf` 
+- ` lts_node` 
+- ` lua` 
+- ` luacheck` 
+- ` n` 
+- ` neovim` 
+- ` net-tools` 
+- ` nnn` 
+- ` node` 
+- ` oh_my_zsh` 
+- ` os-utilities` 
+- ` pdf-tools` 
+- ` picom` 
+- ` pip_main_libraries` 
+- ` poetry` 
+- ` polybar` 
+- ` polybar_rules` 
+- ` pyenv` 
+- ` python` 
+- ` ripgrep` 
+- ` rust` 
+- ` search` 
+- ` shelltheme` 
+- ` social` 
+- ` stow` 
+- ` stylua` 
+- ` terminals` 
+- ` tmux` 
+- ` utility` 
+- ` vim` 
+- ` vpn` 
+- ` vscode` 
+- ` wallpapers` 
+- ` wine` 
+- ` zathura` 
+- ` zettler` 
+- ` zsh` 
 
 To execute specific roles, use the `--tags` option with the `ansible-playbook` command. For example, to run only the Git and Editor roles, use:
 
