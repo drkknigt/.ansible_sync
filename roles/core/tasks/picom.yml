@@ -6,7 +6,7 @@
 
 - name: clone picom
   git:
-    repo: https://github.com/pijulius/picom
+    repo: https://github.com/yshui/picom
     dest: /home/drkknght/picom
 
 - name: build picom
