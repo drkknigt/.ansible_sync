@@ -35,3 +35,10 @@
 - name: install nnn
   import_tasks: nnn.yml
   tags: nnn
+
+- name: install flameshot
+  apt:
+    name: flameshot
+    update_cache: yes
+  become: yes
+  tags: screenshot
