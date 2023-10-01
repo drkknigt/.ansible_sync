@@ -24,13 +24,6 @@
   ignore_errors: yes
   tags: net-tools
       
-- name: install network tools
-  apt:
-    name: ["openssh-server","proxychains","tor","wireshark"]
-    update_cache: yes
-  become: yes
-  ignore_errors: yes
-  tags: net-tools
       
 - name: install pdf tools
   apt:
