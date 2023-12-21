@@ -1,0 +1,29 @@
+---
+- name: install sddm
+  become: True
+  apt:
+    name: "sddm"
+    update_cache: True
+  ignore_errors: yes
+
+- name: dpkg configure
+  become: true
+  shell: |
+    dpkg-reconfigure sddm
+
+- name: clone sddm theme
+  git:
+    repo: https://github.com/drkknigt/sugar-dark/
+    dest: $HOME/sugar-dark
+
+- name: set theme for sddm
+  become: true
+  shell: |
+    cp /home/drkknght/sugar-dark /usr/share/sddm/themes/ -rf
+
+- name: symbolic link to kity executable
+  become: True
+  file:
+     src: "/home/drkknght/.dotfiles/sddm/sddm.conf" 
+     dest: "/etc/sddm.conf.d/sddm.conf"
+     state: link

@@ -59,6 +59,12 @@
   roles:
     - game
   tags: game
+
+- hosts: localhost
+  name: starting wayland roles
+  roles:
+    - wayland
+  tags: wayland
     
 - hosts: localhost
   name: start docker roles

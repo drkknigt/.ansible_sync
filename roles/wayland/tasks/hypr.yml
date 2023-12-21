@@ -1,0 +1,12 @@
+---
+- name: clone hyprpicker
+  git:
+    repo: https://github.com/hyprwm/hyprpicker
+    dest: $HOME/hyprpicker
+
+- name: build wev
+  become: true
+  shell: |
+    cd /home/drkknght/hyprpicker
+    make all
+    cp ./build/hyprpicker /home/drkknght/usr/bin/
