@@ -9,7 +9,7 @@
 - name: dpkg configure
   become: true
   shell: |
-    dpkg-reconfigure sddm
+    sed -i 's/\/usr\/bin/\/lightdm/\/usr\/bin\/sddm' /etc/X11/default-display-manager
 
 - name: clone sddm theme
   git:
