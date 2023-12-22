@@ -6,11 +6,6 @@
     update_cache: True
   ignore_errors: yes
 
-- name: dpkg configure
-  become: true
-  shell: |
-    mkdir /etc/sddm.conf.d
-    sed -i 's/\/usr\/sbin\/lightdm/\/usr\/bin\/sddm/' /etc/X11/default-display-manager
 
 - name: clone sddm theme
   git:
