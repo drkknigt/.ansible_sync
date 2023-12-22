@@ -3,8 +3,3 @@
     PATH=/usr/local/go/bin:$PATH
     PATH=/usr/bin:$PATH
     env CGO_ENABLED=0 go install -ldflags="-s -w" github.com/gokcehan/lf@latest
-    
-- name: install ueberzug
-  become: yes
-  apt:
-    deb: https://download.opensuse.org/repositories/home:/justkidding/xUbuntu_22.04/amd64/ueberzugpp_2.9.1_amd64.deb
