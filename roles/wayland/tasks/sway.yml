@@ -4,9 +4,10 @@
   apt:
     name: ['sway', 'wayland-protocols', 'waylandpp-dev', 'wayland-protocols-amdgpu', 'wayland-scanner++', 'waypipe', 'wayvnc']
     update_cache: True
-    ignore_errors: yes
+  ignore_errors: yes
 
 - name: install tools for sway
   become: True
   apt: 
     name: ['swayimg','swaybg','grim','grimshot','slurp','swayidle','swaylock','wlr-randr','mako-notifier','wl-clipboard','wmctrl','wdisplays','wofi']
+  ignore_errors: yes
