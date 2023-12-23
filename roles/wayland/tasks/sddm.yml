@@ -2,7 +2,7 @@
 - name: install sddm
   become: True
   apt:
-    name: "sddm"
+    name: ["sddm","qmake6","qmake6-bin","qml-module-qtquick-controls","qml-module-qtquick-controls2"]
     update_cache: True
   ignore_errors: yes
 
