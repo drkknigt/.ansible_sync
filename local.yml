@@ -1,6 +1,11 @@
 --- 
 - name: install system
   hosts: localhost
+  name: starting git roles
+  vars_prompt:
+    - name: install_wifi
+      prompt: Do you want to install rt8821ce wifi driver (yes/no)
+      private: false
   pre_tasks:
     - name: update and upgrade the system
       become: true
@@ -9,13 +14,6 @@
          upgrade: no
          state: present
       ignore_errors: yes
-        
-- hosts: localhost
-  name: starting git roles
-  vars_prompt:
-    - name: install_wifi
-      prompt: Do you want to install rt8821ce wifi driver (yes/no)
-      private: false
   roles:
     - { role: git, tags: git }
     - { role: terminals, tags: terminals }
