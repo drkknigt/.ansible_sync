@@ -37,6 +37,6 @@
 - name: Add to docker
   become: yes
   user:
-    name: {{ current_user }}
+    name: "{{ current_user }}"
     groups: docker
     append: true
