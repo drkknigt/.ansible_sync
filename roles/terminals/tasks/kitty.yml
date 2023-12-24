@@ -1,7 +1,7 @@
 - name: install kity from curl
   shell: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
   become: yes
-  become_user: drkknght
+  become_user: "{{ current_user }}"
   
 
 - name: symbolic link to kity executable

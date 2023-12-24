@@ -18,3 +18,7 @@
 - name: install hyprpicker
   import_tasks: hypr.yml
   tags: hypr
+
+- name: install idle
+  import_tasks: idle.yml
+  tags: idle

@@ -7,7 +7,7 @@
 - name: build wev
   become: true
   shell: |
-    cd /home/drkknght/SwayAudioIdleInhibit
+    cd /home/{{ current_user }}/SwayAudioIdleInhibit
     meson build
     ninja -C build
     meson install -C build
