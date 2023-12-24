@@ -19,10 +19,6 @@
   import_tasks: brave.yml
   tags: brave
 
-- name: install zettler reader
-  import_tasks: zettler.yml
-  tags: zettler
-
 - name: install protonvpn
   import_tasks: vpn.yml
   tags: vpn

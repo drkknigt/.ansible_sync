@@ -1,7 +1,7 @@
 ---
 - name: Check that the somefile.conf exists
   stat:
-    path: /home/drkknght/.oh-my-zsh
+    path: /home/{{ current_user }}/.oh-my-zsh
   register: oh_my_stats
 
 - name: Oh-My-Zsh

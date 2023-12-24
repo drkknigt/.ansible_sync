@@ -14,7 +14,7 @@
 - name: build polybar
   become: True
   shell: |
-    cd /home/drkknght/polybar
+    cd /home/{{ current_user }}/polybar
     mkdir build
     cd build
     cmake ..
@@ -27,5 +27,5 @@
     touch /etc/udev/rules.d/backlight.rules
     echo "ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="radeon_bl0", RUN+="/bin/chgrp video /sys/class/backlight/radeon_bl0/brightness" >> /etc/udev/rules.d/backlight.rules
     echo "ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="radeon_bl0", RUN+="/bin/chmod g+w /sys/class/backlight/radeon_bl0/brightness" >> /etc/udev/rules.d/backlight.rules
-    usermod -aG video drkknght
+    usermod -aG video {{ current_user }}
   tags: polybar_rules

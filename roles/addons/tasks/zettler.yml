@@ -1,5 +1,0 @@
----
-- name: deb package
-  apt:
-    deb: https://github.com/Zettlr/Zettlr/releases/download/v2.2.6/Zettlr-2.2.6-amd64.deb
-  become: yes

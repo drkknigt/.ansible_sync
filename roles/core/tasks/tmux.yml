@@ -14,8 +14,8 @@
 - name: build tmux
   become: True
   shell: | 
-    cd /home/drkknght/tmux
+    cd /home/{{ current_user }}/tmux
     sh autogen.sh
     ./configure
     make install
-    cd /home/drkknght/
+    cd /home/{{ current_user }}/

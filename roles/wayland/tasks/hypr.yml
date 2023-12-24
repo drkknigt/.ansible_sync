@@ -7,6 +7,6 @@
 - name: build wev
   become: true
   shell: |
-    cd /home/drkknght/hyprpicker
+    cd /home/{{ current_user }}/hyprpicker
     make all
-    cp ./build/hyprpicker /home/drkknght/usr/bin/
+    cp ./build/hyprpicker /home/{{ current_user }}/usr/bin/

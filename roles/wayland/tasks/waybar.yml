@@ -12,7 +12,7 @@
 - name: build waybar
   become: True
   shell: |
-    cd /home/drkknght/waybar
+    cd /home/{{ current_user }}/waybar
     meson build
     ninja -C build
     ./build/waybar

@@ -57,7 +57,7 @@
 
 - name: install latest
   shell: |
-    cd /home/drkknght/Downloads/i3
+    cd /home/{{ current_user }}/Downloads/i3
     meson build
     ninja -C build
     ninja -C build install

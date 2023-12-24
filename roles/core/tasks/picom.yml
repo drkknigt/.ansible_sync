@@ -7,12 +7,12 @@
 - name: clone picom
   git:
     repo: https://github.com/yshui/picom
-    dest: /home/drkknght/picom
+    dest: /home/{{ current_user }}/picom
 
 - name: build picom
   become: yes
   shell: |
-    cd /home/drkknght/picom
+    cd /home/{{ current_user }}/picom
     git submodule update --init --recursive
     meson --buildtype=release . build
     ninja -C build

@@ -12,63 +12,19 @@
         
 - hosts: localhost
   name: starting git roles
+  vars_prompt:
+    - name: install_wifi
+      prompt: Do you want to install rt8821ce wifi driver (yes/no)
+      private: false
   roles:
-    - git
-  tags: git
-
-- hosts: localhost
-  name: starting terminal roles
-  roles:
-    - terminals
-  tags: terminals
-    
-- hosts: localhost
-  name: starting editor roles
-  roles:
-    - editor
-  tags: editor
-
-    
-- hosts: localhost
-  name: starting languages roles
-  roles:
-    - languages
-  tags: languages
-    
-    
-- hosts: localhost
-  name: starting core roles
-  roles:
-    - core
-  tags: core
-    
-- hosts: localhost
-  name: starting addons roles
-  roles:
-    - addons
-  tags: addons
-
-- hosts: localhost
-  name: starting dotfile roles
-  roles:
-    - config
-  tags: config
-    
-- hosts: localhost
-  name: start gaming roles
-  roles:
-    - game
-  tags: game
-
-- hosts: localhost
-  name: starting wayland roles
-  roles:
-    - wayland
-  tags: wayland
-    
-- hosts: localhost
-  name: start docker roles
-  roles:
-    - docker
-  tags: docker
-    
+    - { role: git, tags: git }
+    - { role: terminals, tags: terminals }
+    - { role: editor, tags: editor }
+    - { role: languages, tags: languages }
+    - { role: core, tags: core }
+    - { role: addons, tags: addons }
+    - { role: config, tags: config }
+    - { role: game, tags: game }
+    - { role: wayland, tags: wayland }
+    - { role: docker, tags: docker }
+    - { role: wifi, tags: wifi }

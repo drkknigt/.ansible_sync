@@ -16,11 +16,11 @@
   become: true
   shell: |
     mkdir /etc/sddm.conf.d
-    cp /home/drkknght/sugar-dark /usr/share/sddm/themes/ -rf
+    cp /home/{{ current_user }}/sugar-dark /usr/share/sddm/themes/ -rf
 
 - name: symbolic link to kity executable
   become: True
   file:
-     src: "/home/drkknght/.dotfiles/sddm/sddm.conf" 
+     src: "/home/{{ current_user }}/.dotfiles/sddm/sddm.conf" 
      dest: "/etc/sddm.conf.d/sddm.conf"
      state: link

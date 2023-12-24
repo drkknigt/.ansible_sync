@@ -1,7 +1,7 @@
 ---
 - name: remove directories
   shell: |
-     rm -rf /home/drkknght/tmux /home/drkknght/polybar /home/drkknght/picom /home/drkknght/.bashrc /home/drkknght/.zshrc /home/drkknght/.tmux.conf /home/drkknght/.profile
+     rm -rf /home/{{ current_user }}/tmux /home/{{ current_user }}/polybar /home/{{ current_user }}/picom /home/{{ current_user }}/.bashrc /home/{{ current_user }}/.zshrc /home/{{ current_user }}/.tmux.conf /home/{{ current_user }}/.profile
   become: yes
 
     
@@ -10,4 +10,4 @@
      chmod +x ~/bin -R
      chmod +x ~/.fehbg
      a=$(ls /sys/class/backlight/)
-     sed -Ei "s/card =.*/card = $a/g" /home/drkknght/.dotfiles/polybar/.config/polybar/config
+     sed -Ei "s/card =.*/card = $a/g" /home/{{ current_user }}/.dotfiles/polybar/.config/polybar/config

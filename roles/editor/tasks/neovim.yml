@@ -12,7 +12,7 @@
 
 - name: build neovim
   make:
-    chdir: /home/drkknght/neovim
+    chdir: /home/{{ current_user }}/neovim
     target: install
     params:
       CMAKE_BUILD_TYPE: Release

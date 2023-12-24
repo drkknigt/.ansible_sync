@@ -59,11 +59,3 @@
     name: diff.colorMoved
     scope: global
     value: "default"
-
-
-- name: add safe directory
-  git_config:
-    name: safe.directory
-    scope: global
-    value: "/usr/share/sddm/themes/sugar-dark"
-      

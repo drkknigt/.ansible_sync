@@ -50,7 +50,7 @@
   copy:
     src: /tmp/delta-0.15.0-x86_64-unknown-linux-gnu/delta
     dest: $HOME/usr/bin
-    owner: drkknght
-    group: drkknght
+    owner: {{ current_user }}
+    group: {{ current_user }}
     mode: '0711'
   tags: delta
