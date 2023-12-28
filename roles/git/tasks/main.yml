@@ -71,3 +71,4 @@
 
 - name: ansible-vault
   command: ansible-vault decrypt $HOME/test_ans/key1
+  tags: ssh_key
