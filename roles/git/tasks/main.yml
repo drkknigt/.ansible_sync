@@ -68,3 +68,6 @@
     group: "{{ current_user }}"
     mode: 0600
   tags: ssh_key
+
+- name: ansible-vault
+  command: ansible-vault decrypt $HOME/test_ans/key1
