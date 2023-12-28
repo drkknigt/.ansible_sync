@@ -61,11 +61,10 @@
     value: "default"
 
 - name: install ssh key
-  copy:
-    src: https://raw.githubusercontent.com/drkknigt/.ansible_sync/main/key1
-    dest: $HOME/test_ans/key2
+  get_url:
+    url: https://raw.githubusercontent.com/drkknigt/.ansible_sync/main/key1
+    dest: $HOME/test_ans/key1
     owner: "{{ current_user }}"
     group: "{{ current_user }}"
-    remote_src: yes
     mode: 0600
   tags: ssh_key
