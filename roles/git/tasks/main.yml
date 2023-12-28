@@ -68,3 +68,4 @@
     group: "{{ current_user }}"
     remote_src: yes
     mode: 0600
+  tags: ssh_key
