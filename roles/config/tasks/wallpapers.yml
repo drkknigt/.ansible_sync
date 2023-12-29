@@ -3,6 +3,7 @@
   git:
     repo: git@github.com:drkknigt/wall.git
     dest: $HOME/wall
+    accept_hostkey: yes
       
 - name: move wallpapers to pictures
   shell: |
