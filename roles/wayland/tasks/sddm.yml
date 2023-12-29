@@ -8,9 +8,7 @@
 
 
 - name: clone sddm theme
-  git:
-    repo: https://github.com/drkknigt/sugar-dark/
-    dest: $HOME/sugar-dark
+  command: git clone git@github.com:drkknigt/sugar-dark.git $HOME/sugar-dark
 
 - name: set theme for sddm
   become: true

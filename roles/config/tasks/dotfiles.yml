@@ -1,5 +1,6 @@
 ---
 - name: clone dotfiles
-  git:
-    repo: https://github.com/drkknigt/.dotfiles.git
-    dest: $HOME/.dotfiles
+  command: git clone git@github.com:drkknigt/.dotfiles.git $HOME/.dotfiles
+
+- name: clone ansible
+  command: git clone git@github.com:drkknigt/.ansible_sync $HOME/.ansible_sync

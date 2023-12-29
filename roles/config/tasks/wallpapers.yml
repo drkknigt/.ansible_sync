@@ -1,9 +1,6 @@
 ---
 - name: clone wallpapers
-  git:
-    repo: git@github.com:drkknigt/wall.git
-    dest: $HOME/wall
-    accept_hostkey: yes
+  command: git clone git@github.com:drkknigt/wall.git $HOME/wall
       
 - name: move wallpapers to pictures
   shell: |
