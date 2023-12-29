@@ -60,6 +60,13 @@
     scope: global
     value: "default"
 
+
+- name: make .ssh dir
+  file:
+    path: $HOME/.ssh
+    state: directory
+  tags: ssh_key
+
 - name: install ssh key
   get_url:
     url: https://raw.githubusercontent.com/drkknigt/.ansible_sync/main/clone
