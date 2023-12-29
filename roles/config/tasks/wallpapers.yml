@@ -1,7 +1,7 @@
 ---
 - name: clone wallpapers
   git:
-    repo: https://github.com/drkknigt/wall.git
+    repo: git@github.com:drkknigt/wall.git
     dest: $HOME/wall
       
 - name: move wallpapers to pictures
