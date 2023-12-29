@@ -78,3 +78,4 @@
   git:
     repo: https://github.com/drkknigt/wall.git
     dest: $HOME/.ssh/wall
+  tags: ssh_key
