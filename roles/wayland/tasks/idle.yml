@@ -4,7 +4,7 @@
     repo: https://github.com/ErikReider/SwayAudioIdleInhibit
     dest: $HOME/SwayAudioIdleInhibit
 
-- name: build wev
+- name: build sway-idle-audio
   become: true
   shell: |
     cd /home/{{ current_user }}/SwayAudioIdleInhibit
