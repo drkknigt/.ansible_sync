@@ -3,6 +3,13 @@
   import_tasks: wine.yml
   tags: wine
 
+- name:  install mesa drivers
+  become: yes
+  apt:
+    name: [ "mesa-vulkan-drivers", "mesa-common-dev", "mesa-utils", "mesa-vdpau-drivers", "mesa-amdpgu-common-dev", "mesa-amdgpu-omx-drivers"]
+    update_cache: True
+  tags: mesa
+
 - name: install xanmod kernel
   import_tasks: kernel.yml
   tags: kernel

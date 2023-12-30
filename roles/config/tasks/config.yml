@@ -5,9 +5,10 @@
   become: yes
 
     
-- name: change permissions and modify polybar config
-  shell: |
-     chmod +x ~/bin -R
-     chmod +x ~/.fehbg
-     a=$(ls /sys/class/backlight/)
-     sed -Ei "s/card =.*/card = $a/g" /home/{{ current_user }}/.dotfiles/polybar/.config/polybar/config
+# - name: change permissions and modify polybar config
+#   shell: |
+#      chmod +x ~/bin -R
+#      chmod +x ~/.fehbg
+#      a=$(ls /sys/class/backlight/)
+#      sed -Ei "s/card =.*/card = $a/g" /home/{{ current_user }}/.dotfiles/polybar/.config/polybar/config
+#   tags: polybar
