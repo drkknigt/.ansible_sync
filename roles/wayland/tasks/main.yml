@@ -7,13 +7,13 @@
   import_tasks: sway.yml
   tags: sway
 
-# - name: install waybar
-#   import_tasks: waybar.yml
-#   tags: waybar
+- name: install waybar
+  import_tasks: waybar.yml
+  tags: waybar
 
-# - name: install wev
-#   import_tasks: wev.yml
-#   tags: wev
+- name: install wev
+  import_tasks: wev.yml
+  tags: wev
 
 - name: install hyprpicker
   import_tasks: hypr.yml
