@@ -1,8 +1,8 @@
 ---
-- name: install tmux dependencies
+- name: install sway dependencies
   become: True
   apt:
-    name: ['sway', 'wayland-protocols', 'waylandpp-dev', 'wayland-protocols-amdgpu', 'wayland-scanner++', 'waypipe', 'wayvnc']
+    name: ['sway', 'wayland-protocols', 'waylandpp-dev', 'wayland-scanner++', 'waypipe', 'wayvnc']
     update_cache: True
   ignore_errors: yes
 
