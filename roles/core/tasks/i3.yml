@@ -62,8 +62,8 @@
     ninja -C build
     ninja -C build install
 
-- name: install i3wm and sxhkd
+- name: install i3wm 
   apt:
-    name: ["i3-wm","i3","sxhkd"]
+    name: ["i3-wm","i3"]
   become: true
   ignore_errors: true
