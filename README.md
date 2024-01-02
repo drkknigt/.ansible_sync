@@ -1,6 +1,6 @@
 # Ansible Playbook with Roles Readme
 
-This repository contains an Ansible playbook with roles that i use to configure and set up various components on my local system. The playbook is designed to be run on the `local` machine and covers a range of tasks including system updates, Git configuration, terminal setup, editor installation, language configurations, core utilities, addon installations, dotfile management, gaming setup, and Docker configuration. Each task is modularized into separate roles to ensure easy maintenance and reusability.  
+This repository contains  Ansible playbook with roles that i use to configure and set up various components on my local system. The playbook is designed to be run on the `local` machine and covers a range of tasks including system updates, Git configuration, terminal setup, editor installation, language configurations, core utilities, addon installations, dotfile management, gaming setup, and Docker configuration. Each task is modularized into separate roles to ensure easy maintenance and reusability.  
 
 This repository contains a bootstrap.sh file that serves as an automated system bootstrapper.  
 When executed, this script will automatically set up and install all the necessary components required for Ansible to run smoothly. It streamlines the process of installing all the Ansible-related dependencies, making it effortless to get started with the playbook and roles provided in the repository.
