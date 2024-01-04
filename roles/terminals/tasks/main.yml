@@ -4,9 +4,9 @@
     path: $HOME/.local/bin
     state: directory
       
-- name: install kitty
-  import_tasks: kitty.yml
-  tags: kitty
+# - name: install kitty
+#   import_tasks: kitty.yml
+#   tags: kitty
   
 
 - name: install alacritty from aslatter ppa
