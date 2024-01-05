@@ -15,6 +15,11 @@
 - name: install i3
   import_tasks: i3.yml
   tags: i3
+    
+ 
+- name: install dunst
+  import_tasks: dunst.yml
+  tags: dunst
 
 - name: install polybor
   import_tasks: polybar.yml

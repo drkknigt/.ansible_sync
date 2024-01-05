@@ -9,5 +9,5 @@
 - name: install tools for sway
   become: True
   apt: 
-    name: ['swayimg','swaybg','grim','grimshot','slurp','swayidle','swaylock','wlr-randr','mako-notifier','wl-clipboard','wmctrl','wdisplays','wofi','wev']
+    name: ['swayimg','swaybg','grim','grimshot','slurp','swayidle','swaylock','wlr-randr','wl-clipboard','wmctrl','wdisplays','wofi','wev']
   ignore_errors: yes
