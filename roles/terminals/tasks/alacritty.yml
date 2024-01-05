@@ -37,8 +37,7 @@
 - name: install alacritty
   shell: |
     cd $HOME/alacritty
-    source $HOME/.cargo/env
-    cargo build --release
+    $HOME/.cargo/bin/cargo build --release
     cp target/release/alacritty ~/.local/bin/
     
       
