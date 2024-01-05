@@ -7,6 +7,10 @@
   import_tasks: lazygit.yml
   tags: lazygit
 
+- name: install glow markdown reader
+  import_tasks: glow.yml
+  tags: glow
+
 - name: install fast file searching and text search tools
   import_tasks: search.yml
   tags: search
