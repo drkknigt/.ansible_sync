@@ -1,22 +1,47 @@
 ---
-- name: install keys for alacritty
-  apt_key:
-    keyserver: keyserver.ubuntu.com
-    id: 3A160895CC2CE253085D08A552B24DF7D43B5377
-  become: yes
-  ignore_errors: yes
-    
-- name: install ppa for alacritty
-  become: True
-  apt_repository:
-    repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu jammy main
-    state: present
-  ignore_errors: yes
-    
-
-- name: install alacritty
+# - name: install keys for alacritty
+#   apt_key:
+#     keyserver: keyserver.ubuntu.com
+#     id: 3A160895CC2CE253085D08A552B24DF7D43B5377
+#   become: yes
+#   ignore_errors: yes
+#     
+# - name: install ppa for alacritty
+#   become: True
+#   apt_repository:
+#     repo: deb https://ppa.launchpadcontent.net/aslatter/ppa/ubuntu jammy main
+#     state: present
+#   ignore_errors: yes
+#     
+#
+# - name: install alacritty
+#   become: True
+#   apt:
+#      name: alacritty
+#      update_cache: yes
+#   ignore_errors: yes
+- name: install alacritty dependencies
   become: True
   apt:
-     name: alacritty
-     update_cache: yes
+    name: ['cmake', 'pkg-config', 'libfreetype6-dev', 'libfontconfig1-dev', 'libxcb-xfixes0-dev', 'libxkbcommon-dev', 'python3']
+    update_cache: yes
   ignore_errors: yes
+
+- name: clone alacritty
+  git: 
+    repo: https://github.com/alacritty/alacritty
+    dest: $HOME/alacritty
+    version: v0.13.0
+    depth: 1
+  
+- name: install alacritty
+  shell: |
+    cd $HOME/alacritty
+    source $HOME/.cargo/env
+    cargo build --release
+    cp target/release/alacritty ~/.local/bin/
+    
+      
+  
+    
+    

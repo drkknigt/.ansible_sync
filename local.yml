@@ -12,9 +12,9 @@
       ignore_errors: yes
   roles:
     - { role: git, tags: git }
-    - { role: terminals, tags: terminals }
     - { role: editor, tags: editor }
     - { role: languages, tags: languages }
+    - { role: terminals, tags: terminals }
     - { role: core, tags: core }
     - { role: addons, tags: addons }
     - { role: config, tags: config }
