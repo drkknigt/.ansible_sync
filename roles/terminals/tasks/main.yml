@@ -3,6 +3,7 @@
   file:
     path: $HOME/.local/bin
     state: directory
+  tags: [ alacritty, fzf, nnn ]
       
 # - name: install kitty
 #   import_tasks: kitty.yml
