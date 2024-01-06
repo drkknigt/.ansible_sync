@@ -15,7 +15,7 @@
 
 - name: install rust
   import_tasks: rust.yml
-  tags: rust
+  tags: [ rust, alacritty ]
     
 - name: install go
   import_tasks: go.yml
