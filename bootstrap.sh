@@ -17,3 +17,4 @@ fi
     
     
 sudo dpkg-reconfigure sddm
+. ~/.dotfiles/sys_d/systemd-disabled
