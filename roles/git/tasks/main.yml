@@ -46,6 +46,13 @@
   git_config:
     name: delta.light
     scope: global
+    value: "false"
+
+
+- name: set delta options
+  git_config:
+    name: delta.line-numbers
+    scope: global
     value: "true"
       
 - name: set merge options
