@@ -1,11 +1,20 @@
 ---
 - name: install utilities software
   apt:
-    name: ["tldr","htop","mpv","cmake","rofi","nitrogen","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","feh","virt-manager","lm-sensors","psensor","qbittorrent","qalc","smartmontools","gsmartcontrol","gimp","ffmpeg","mediainfo","testdisk","linux-cpupower","cpupower-gui","xcvt","acpitool","checkinstall","tlp","tlp-rdw","powertop","cheese","pavucontrol","sddm","shellcheck","i3blocks","xdotool"]
+    name: ["tldr","htop","mpv","cmake","rofi","nitrogen","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","feh","virt-manager","lm-sensors","psensor","qbittorrent","qalc","smartmontools","gsmartcontrol","gimp","ffmpeg","mediainfo","testdisk","cpupower-gui","xcvt","acpitool","checkinstall","tlp","tlp-rdw","powertop","cheese","pavucontrol","sddm","shellcheck","i3blocks","xdotool"]
     update_cache: yes
   become: yes
   ignore_errors: yes
   tags: os-utilities
+
+
+- name: install cpupower 
+  apt:
+    name: [ "cpufrequtils","cpufreqd"]
+    update_cache: yes
+  become: yes
+  ignore_errors: yes
+  tags: os-utilities-power
 
 
 - name: install social networking software
