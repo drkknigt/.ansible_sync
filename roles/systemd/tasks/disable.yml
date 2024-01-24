@@ -1,0 +1,152 @@
+---
+- name: disable network-wait-online service
+  systemd: 
+    name: NetworkManager-wait-online.service
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable blueman-mechanism service
+  systemd: 
+    name: blueman-mechanism.service
+    state: stopped
+    enabled: no
+  become: yes
+
+
+- name: disable bluetooth.service
+  systemd: 
+    name: bluetooth.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable ModemManager.service
+  systemd: 
+    name: ModemManager.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable account daemon service
+  systemd: 
+    name: accounts-daemon.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable plymouth
+  systemd: 
+    name: plymouth
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable netword dispatcher servie
+  systemd: 
+    name: networkd-dispatcher.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable system udev settle service
+  systemd: 
+    name: system-udev-settle.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable gpu manager
+  systemd: 
+    name: gpu-manager.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable cups.service
+  systemd: 
+    name: cups.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable cups browsd
+  systemd: 
+    name: cups-browsed.service
+    state: stopped
+    enabled: no
+  become: yes
+    
+- name: disable avahi daemon service
+  systemd: 
+    name: avahi-daemon.service
+    state: stopped
+    enabled: no
+  become: yes
+
+
+- name: disable apt daily service
+  systemd: 
+    name: apt-daily-upgrade.timer
+    state: stopped
+    enabled: no
+  become: yes
+
+
+- name: disable apt daily service
+  systemd: 
+    name: apt-daily.timer
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable tor service
+  systemd: 
+    name: tor.service
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable ubuntu-system-adjustments.service
+  systemd: 
+    name: ubuntu-system-adjustments.service
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable zfs-load-module.service
+  systemd: 
+    name: zfs-load-module.service
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable rsyslog service
+  systemd: 
+    name: rsyslog.service
+    state: stopped
+    enabled: no
+  become: yes
+
+
+- name: disable grub service
+  systemd: 
+    name: grub-common.service
+    state: stopped
+    enabled: no
+  become: yes
+
+
+- name: disable networking.service
+  systemd: 
+    name: networking.service
+    state: stopped
+    enabled: no
+  become: yes
+
+- name: disable libvirt-guests.service
+  systemd: 
+    name: libvirt-guests.service
+    state: stopped
+    enabled: no
+  become: yes

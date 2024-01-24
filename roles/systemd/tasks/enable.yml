@@ -1,0 +1,14 @@
+---
+- name: Enable tlp services
+  systemd: 
+    name: tlp.service
+    state: started
+    enabled: true
+  become: yes
+
+- name: Enable thermald services
+  systemd: 
+    name: thermald.service
+    state: started
+    enabled: true
+  become: yes
