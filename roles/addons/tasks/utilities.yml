@@ -10,7 +10,7 @@
 
 - name: install cpupower 
   apt:
-    name: [ "cpufrequtils","cpufreqd"]
+    name: [ "cpufrequtils" ]
     update_cache: yes
   become: yes
   ignore_errors: yes
