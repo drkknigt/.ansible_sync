@@ -22,3 +22,4 @@
     - { role: wayland, tags: wayland }
     - { role: docker, tags: docker }
     - { role: wifi, tags: wifi }
+    - { role: systemd, tags: systemd }

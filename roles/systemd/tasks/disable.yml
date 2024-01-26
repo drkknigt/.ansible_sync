@@ -49,13 +49,6 @@
     enabled: no
   become: yes
     
-- name: disable system udev settle service
-  systemd: 
-    name: system-udev-settle.service
-    state: stopped
-    enabled: no
-  become: yes
-    
 - name: disable gpu manager
   systemd: 
     name: gpu-manager.service
