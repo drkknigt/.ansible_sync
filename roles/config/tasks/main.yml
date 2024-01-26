@@ -33,3 +33,9 @@
     cp ~/.dotfiles/brave/Local\ State ~/.config/BraveSoftware/Brave-Browser
     cp ~/.dotfiles/brave/Preferences ~/.config/BraveSoftware/Brave-Browser/Default
   tags: brave-config
+
+- name: symbolic link xterm to alacritty
+  file:
+     src: "/usr/bin/imv-x11" 
+     dest: "$HOME/usr/bin/imv"
+     state: link
