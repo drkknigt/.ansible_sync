@@ -39,9 +39,3 @@
      src: "/usr/bin/imv-x11" 
      dest: "$HOME/usr/bin/imv"
      state: link
-
-- name: configure pk10 to show virtuenv and pyenv
-  shell: |
-    echo "typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_PYTHON_VERSION=true" >> ~/.p10k.zsh
-    echo "typeset -g POWERLEVEL9K_VIRTUALENV_SHOW_WITH_PYENV=true" >> ~/.p10k.zsh
-  tags: pk10-config
