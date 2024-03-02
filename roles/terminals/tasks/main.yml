@@ -14,3 +14,7 @@
   import_tasks: alacritty.yml
   tags: alacritty
 
+- name: install wezterm
+  import_tasks: wezterm.yml
+  tags: wezterm
+

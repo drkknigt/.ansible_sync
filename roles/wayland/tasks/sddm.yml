@@ -16,7 +16,7 @@
     mkdir /etc/sddm.conf.d
     cp /home/{{ current_user }}/sugar-dark /usr/share/sddm/themes/ -rf
 
-- name: symbolic link to kity executable
+- name: symbolic link to sddm conf
   become: True
   file:
      src: "/home/{{ current_user }}/.dotfiles/sddm/sddm.conf" 

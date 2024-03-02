@@ -1,7 +1,7 @@
 ---
 - name: install utilities software
   apt:
-    name: ["tldr","htop","mpv","cmake","rofi","nitrogen","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","feh","virt-manager","lm-sensors","psensor","qbittorrent","qalc","smartmontools","gsmartcontrol","gimp","ffmpeg","mediainfo","testdisk","cpupower-gui","xcvt","acpitool","checkinstall","tlp","tlp-rdw","powertop","cheese","pavucontrol","sddm","shellcheck","i3blocks","xdotool","udiskie","imv"]
+    name: ["tldr","htop","mpv","cmake","rofi","nitrogen","lxappearance","arandr","bat","vnstat","xwallpaper","brightnessctl","tree","xautolock","kcolorchooser","feh","virt-manager","lm-sensors","psensor","qbittorrent","qalc","smartmontools","gsmartcontrol","gimp","ffmpeg","mediainfo","testdisk","cpupower-gui","xcvt","acpitool","checkinstall","tlp","tlp-rdw","powertop","cheese","pavucontrol","sddm","shellcheck","i3blocks","xdotool","udiskie","imv","sysstat","vlc","chafa"]
     update_cache: yes
   become: yes
   ignore_errors: yes
@@ -48,7 +48,7 @@
     state: directory
   tags: delta
 
-- name: extract tar.gz 
+- name: extract tar.gz of delta
   unarchive:
     src: https://github.com/dandavison/delta/releases/download/0.15.0/delta-0.15.0-x86_64-unknown-linux-gnu.tar.gz
     dest: /tmp
