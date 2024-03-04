@@ -4,6 +4,13 @@
     path: $HOME/.ssh
     state: directory
 
+- name: install vim and xclip
+  become: True
+  apt:
+    name: ["ssh-askpass"]
+    update_cache: yes
+  ignore_errors: yes
+      
 - name: install ssh key
   get_url:
     url: https://raw.githubusercontent.com/drkknigt/.ansible_sync/main/clone
@@ -15,3 +22,9 @@
 - name: ansible-vault
   command: ansible-vault decrypt $HOME/.ssh/id_ed25519
 
+- name: add password for ssh
+  shell: ssh-add $HOME/.ssh/id_ed25519
+
+- name: test ssh
+  shell: ssh -T git@github.com
+  ignore_errors: true
