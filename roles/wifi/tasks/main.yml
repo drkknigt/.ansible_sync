@@ -9,7 +9,9 @@
   git:
     repo: https://github.com/tomaspinho/rtl8821ce
     dest: $HOME/rtl8821ce
+  retries: 3
   when: install_wifi == "yes"
+  
 
 - name: build and install driver
   become: yes

@@ -4,3 +4,4 @@
     repo: 'https://github.com/romkatv/powerlevel10k.git'
     depth: 1
     dest: "~/powerlevel10k"
+  retries: 3

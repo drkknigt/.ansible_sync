@@ -3,3 +3,4 @@
   git:
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: "~/zsh-autosuggestions"
+  retries: 3

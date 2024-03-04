@@ -3,6 +3,7 @@
   git:
     repo: https://github.com/hyprwm/hyprpicker
     dest: $HOME/hyprpicker
+  retries: 3
 
 - name: build hyprpicker
   become: true

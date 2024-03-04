@@ -33,6 +33,7 @@
     dest: $HOME/alacritty
     # version: v0.13.0
     depth: 1
+  retries: 3
   
 - name: install alacritty
   shell: |

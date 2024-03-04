@@ -10,6 +10,7 @@
   git:
     repo: https://github.com/tmux/tmux.git
     dest: $HOME/tmux
+  retries: 3
 
 - name: build tmux
   become: True

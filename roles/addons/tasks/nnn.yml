@@ -3,6 +3,7 @@
     repo: https://github.com/jarun/nnn
     dest: $HOME/nnn
     recursive: true
+  retries: 3
   
       
 - name: build nnn

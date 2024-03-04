@@ -3,6 +3,7 @@
   git:
     repo: https://git.sr.ht/~sircmpwn/wev/
     dest: $HOME/wev
+  retries: 3
 
 - name: build wev
   become: true

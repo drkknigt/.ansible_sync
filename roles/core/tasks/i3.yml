@@ -48,6 +48,7 @@
     dest: $HOME/Downloads/i3
     version: stable
     recursive: True
+  retries: 3
 
 - name: build dependencies
   apt:

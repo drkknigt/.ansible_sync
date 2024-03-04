@@ -4,3 +4,4 @@
     repo: 'https://github.com/romkatv/zsh-defer'
     depth: 1
     dest: "~/zsh-defer/"
+  retries: 3

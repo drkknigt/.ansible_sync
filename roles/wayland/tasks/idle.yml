@@ -3,6 +3,7 @@
   git:
     repo: https://github.com/ErikReider/SwayAudioIdleInhibit
     dest: $HOME/SwayAudioIdleInhibit
+  retries: 3
 
 - name: build sway-idle-audio
   become: true

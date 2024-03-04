@@ -11,6 +11,7 @@
     dest: $HOME/dunst
     depth: 1
     version: v1.9.2 
+  retries: 3
 
 - name: build dunst
   become: yes
