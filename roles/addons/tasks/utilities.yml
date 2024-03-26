@@ -27,7 +27,7 @@
       
 - name: install network tools
   apt:
-    name: ["openssh-server","proxychains","tor","wireshark","nmap","whois"]
+    name: ["openssh-server","proxychains","tor","wireshark","nmap","whois", "macchanger"]
     update_cache: yes
   become: yes
   ignore_errors: yes
