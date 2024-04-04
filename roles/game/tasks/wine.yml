@@ -39,4 +39,12 @@
     name: ["winehq-staging", "lutris"]
     install_recommends: yes
     update_cache: True
+
+
+- name: install gamemode
+  become: yes
+  apt:
+    name: gamemode
+    install_recommends: yes
+    update_cache: True
       
