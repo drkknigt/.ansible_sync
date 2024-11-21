@@ -10,6 +10,7 @@
          upgrade: no
          state: present
       ignore_errors: yes
+    - import_tasks: roles/git/tasks/ssh.yml
   roles:
     - { role: git, tags: git }
     - { role: editor, tags: editor }
